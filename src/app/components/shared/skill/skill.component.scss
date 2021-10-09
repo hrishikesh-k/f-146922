@@ -1,0 +1,55 @@
+@import '../../../../assets/variables.scss';
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  color: $color-dark;
+  margin: 15px 10px;
+  align-items: center;
+  min-width: 180px;
+  width: calc(25% - 20px);
+
+  @media only screen and (max-width: $mobile-size) {
+    width: calc(50% - 10px);
+    margin: 15px 0;
+    min-width: unset;
+  }
+}
+
+.skill-name {
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.skill-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-bar-piece {
+  background-color: #d7d7d7;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 0px;
+}
+
+.painted {
+  background-color: $color-primary;
+  animation: paint 0.4s;
+}
+
+@keyframes paint {
+  0% {
+    background-color: #d7d7d7;
+  }
+  100% {
+    background-color: $color-primary;
+  }
+}

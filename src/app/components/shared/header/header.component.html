@@ -1,0 +1,24 @@
+<section>
+  <div class="logo">
+    Lucas Mendonça <span class="subtitle">- Portfolio</span>
+  </div>
+  <div class="line"></div>
+  <div class="links">
+    <a (click)="onClickLink('Projects')">Main Projects</a>
+    <a (click)="onClickLink('Projetos-Front')">Demos</a>
+    <a (click)="onClickLink('Projetos-WebDesign')">Design</a>
+    <a (click)="onClickLink('About')">About</a>
+  </div>
+  <div (click)="onClickMobileMenu()" class="mobile-menu">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+</section>
+
+<div class="mobile-menu-modal" *ngIf="showMobileMenu">
+  <div><a (click)="onClickLink('Projects')">Main Projects</a></div>
+  <div><a (click)="onClickLink('Projetos-Front')">Demos</a></div>
+  <div><a (click)="onClickLink('Projetos-WebDesign')">Design</a></div>
+  <div><a (click)="onClickLink('About')">About</a></div>
+</div>

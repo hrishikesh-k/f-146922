@@ -1,0 +1,12 @@
+<app-header (onPageChange)="onPageChange($event)"></app-header>
+  <div class="content">
+    <app-projects-list 
+      *ngIf="page !== 'About'"
+      [page]="page">
+    </app-projects-list>
+
+    <app-about 
+      *ngIf="page === 'About'">
+    </app-about>
+  </div>
+<app-footer></app-footer>
