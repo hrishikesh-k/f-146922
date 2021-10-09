@@ -24,6 +24,10 @@ export class IntranetsComponent implements OnInit {
       name: 'Newton',
       image: 'newton.png',
     },
+    {
+      name: 'Nexa',
+      image: 'nexa.png',
+    },
   ]
 
   constructor() { }
