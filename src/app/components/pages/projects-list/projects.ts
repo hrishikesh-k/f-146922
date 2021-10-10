@@ -118,7 +118,7 @@ export const projects = {
       'Title': 'Omint - Wordpress',
       'Link': 'https://www.omint.com.br/en/',
       'Imagem': 'assets/images/omint.png',
-      'About': 'Developed with Wordpress, I ajusted some layout bugs, created custom pages and edited the PHP integration'
+      'About': 'Developed with Wordpress, I adjusted some layout bugs, created custom pages and edited the PHP integration'
     },
     {
       'Title': 'Luvieh Jewellery - Shopify',
