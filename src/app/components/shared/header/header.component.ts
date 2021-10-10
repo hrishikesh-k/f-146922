@@ -16,6 +16,7 @@ export class HeaderComponent implements OnInit {
 
   onClickLink(pageName) {
     this.onPageChange.emit(pageName);
+    this.showMobileMenu = false;
   }
 
   onClickMobileMenu() {

@@ -106,7 +106,7 @@ export const projects = {
       'Title': 'MeuCarroNovo - Angular',
       'Link': 'https://www.meucarronovo.com.br',
       'Imagem': 'assets/images/meucarronovo.png',
-      'About': 'Website developed with angular 7, I developed the analytics, some layouts ajusts, bugs corrections, changes of integration with API and also developes pages to another projects in the meucarronovo system'
+      'About': 'Website developed with angular 7, I developed the analytics, some layouts ajusts, bugs corrections, changes of integration with API and also developed pages to another projects in the meucarronovo system'
     } ,
     {
       'Title': 'WFX Editora e Produtora - Angular',
@@ -124,7 +124,7 @@ export const projects = {
       'Title': 'Luvieh Jewellery - Shopify',
       'Link': 'https://luvieh.com/',
       'Imagem': 'assets/images/luvieh.png',
-      'About': 'E-commerce developed with Shopify, a plataform like Wordpress. I made some modifications that the client wanted, edited the theme and criated customized pages'
+      'About': 'E-commerce developed with Shopify, a plataform like Wordpress. I made some modifications that the client wanted, edited the theme and created customized pages'
     }
   ]
 }

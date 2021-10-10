@@ -14,5 +14,6 @@ export class MainComponent implements OnInit {
 
   onPageChange(pageName) {
     this.page = pageName;
+    window.scrollTo(0, 0);
   }
 }
