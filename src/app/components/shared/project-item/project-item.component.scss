@@ -7,7 +7,7 @@ a {
 
 :host{
   margin: 20px 20px;
-  width: 28%;
+  width: calc(33.33% - 40px);
   height: 300px;
   overflow: hidden;
   position: relative;
