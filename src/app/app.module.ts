@@ -10,6 +10,8 @@ import { AboutComponent } from './components/pages/about/about.component';
 import { IntranetsComponent } from './components/shared/intranets/intranets.component';
 import { MainComponent } from './components/pages/main/main.component';
 import { SkillComponent } from './components/shared/skill/skill.component';
+import { ProjectItemComponent } from './components/shared/project-item/project-item.component';
+import { DesignProjectComponent } from './components/pages/design-project/design-project.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { SkillComponent } from './components/shared/skill/skill.component';
     IntranetsComponent,
     MainComponent,
     SkillComponent,
+    ProjectItemComponent,
+    DesignProjectComponent,
   ],
   imports: [
     BrowserModule,

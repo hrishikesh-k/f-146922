@@ -28,7 +28,7 @@ export class SkillComponent implements OnInit {
       level: 3,
     },
     {
-      name: 'ReactJs',
+      name: 'React',
       level: 4,
     },
     {
@@ -65,7 +65,7 @@ export class SkillComponent implements OnInit {
     },
     {
       name: 'Jenkins',
-      level: 2,
+      level: 4,
     },
     {
       name: 'Sonarqube',
@@ -89,7 +89,11 @@ export class SkillComponent implements OnInit {
     },
     {
       name: 'Docker',
-      level: 1,
+      level: 3,
+    },
+    {
+      name: 'Insomnia',
+      level: 3,
     },
   ];
 

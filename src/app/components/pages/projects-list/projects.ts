@@ -3,12 +3,22 @@ export interface Project {
   Link: string;
   Imagem: string;
   About: string;
+  subCategory: string;
+}
+
+export const subCategoryLevel = {
+  Angular: 1,
+  React: 2,
+  JQuery: 3,
+  VueJS: 4,
+  AngularJS: 5,
 }
 
 export const projects = {
   'Projetos-Front': [
     {
       'Title': 'TvShow - React',
+      'subCategory': 'React',
       'Link': 'https://lucasmendoncateste.netlify.com/',
       'Imagem': 'assets/images/tvshow.png',
       'About': 'Developed in React on a test required by a company during the hiring process'
@@ -16,72 +26,84 @@ export const projects = {
     
     {
       'Title': 'This Portfolio - Angular',
+      'subCategory': 'Angular',
       'Link': '',
       'Imagem': 'assets/images/portfolio.png',
       'About': 'A way to show my work'
     },
     {
-      'Title': 'Blog - Angular7',
+      'Title': 'Blog - Angular',
+      'subCategory': 'Angular',
       'Link': 'https://angularblog.netlify.com/',
       'Imagem': 'assets/images/blog.png',
       'About': 'A study about Angular'
     },
     {
       'Title': 'Social Media - React',
+      'subCategory': 'React',
       'Link': 'http://lucasmendoncapportfolio.atwebpages.com/pages/SocialMedia/SocialMedia.html',
       'Imagem': 'assets/images/SocialMedia.png',
       'About': 'A study about React'
     },
     {
       'Title': 'Dashboard - AngularJS',
+      'subCategory': 'AngularJS',
       'Link': 'http://lucasmendoncapportfolio.atwebpages.com/pages/GerenciamentoProjetos.html',
       'Imagem': 'assets/images/dashboard.png',
       'About': 'A study about AngularJS and Javascript'
     },
     {
       'Title': 'LP Eixo Platina - React',
+      'subCategory': 'React',
       'Link': 'https://eixo-lp.netlify.com/',
       'Imagem': 'assets/images/eixo.png',
       'About': 'Page developed in React, for Eixo Platina, to show a new building project'
     },
     {
       'Title': 'pneuStore - React',
+      'subCategory': 'React',
       'Link': 'https://pneu-store.netlify.com/',
       'Imagem': 'assets/images/pneus.png',
       'About': 'Page developed to a PneuStore competition'
     },
     {
       'Title': 'E-Commerce - JQuery',
+      'subCategory': 'JQuery',
       'Link': 'http://lucasmendoncapportfolio.atwebpages.com/pages/Vendas.html',
       'Imagem': 'assets/images/ecomerce.png',
       'About': 'A study about JQuery'
     },
     {
       'Title': 'Zara - React',
+      'subCategory': 'React',
       'Link': 'https://gtc-lucasmendonca.netlify.com/',
       'Imagem': 'assets/images/gtc.png',
       'About': 'Developed in React on a test required by a company during the hiring process'
     },
     {
       'Title': 'Checklist - VueJS',
+      'subCategory': 'VueJS',
       'Link': 'http://lucasmendoncapportfolio.atwebpages.com/pages/checklist/',
       'Imagem': 'assets/images/vue.png',
       'About': 'A study about VueJS'
     },
     {
       'Title': 'Login - JQuery',
+      'subCategory': 'JQuery',
       'Link': 'http://lucasmendoncapportfolio.atwebpages.com/pages/Login.html',
       'Imagem': 'assets/images/login.png',
       'About': 'A study about JQuery'
     },
     {
       'Title': 'Marvel Characters - React',
+      'subCategory': 'React',
       'Link': 'https://marveltestlucasmendonca.netlify.com/',
       'Imagem': 'assets/images/marvelTest.png',
       'About': 'Developed in React on a test required by a company during the hiring process'
     },
     {
       'Title': 'profit - React',
+      'subCategory': 'React',
       'Link': 'https://test-profit-lucas-mendonca.netlify.com/',
       'Imagem': 'assets/images/profit.png',
       'About': 'Developed in React on a test required by a company during the hiring process'
@@ -93,7 +115,25 @@ export const projects = {
       'Link': 'https://xd.adobe.com/view/2168ae57-7722-4175-7187-32285ced0798-5759/',
       'Imagem': 'assets/images/lejour.png',
       'About': 'Project designed in competition on FIAP, my graduation'
-    }
+    },
+    {
+      'Title': 'This Portfolio',
+      'Link': '',
+      'Imagem': 'assets/images/portfolio.png',
+      'About': 'A way to show my work'
+    },
+    {
+      'Title': 'Nintendo Website Redesign',
+      'Link': 'https://www.behance.net/gallery/135246757/Nintendo-redesign',
+      'Imagem': 'assets/images/nintendo-site/desafio-01.jpg',
+      'About': 'Design developed to a challenge to help a friend study front-end'
+    },
+    {
+      'Title': 'WFX Produtora de Histórias',
+      'Link': 'https://www.wfxproducoes.com/',
+      'Imagem': 'assets/images/wfxprod.png',
+      'About': 'Website developed with angular 8, I developed the whole website to show some of my creative projects'
+    },
   ],
   'Projects': [
      {
@@ -107,13 +147,13 @@ export const projects = {
       'Link': 'https://www.meucarronovo.com.br',
       'Imagem': 'assets/images/meucarronovo.png',
       'About': 'Website developed with angular 7, I developed the analytics, some layouts ajusts, bugs corrections, changes of integration with API and also developed pages to another projects in the meucarronovo system'
-    } ,
+    },
     {
-      'Title': 'WFX Editora e Produtora - Angular',
+      'Title': 'WFX Produtora de Histórias - Angular',
       'Link': 'https://www.wfxproducoes.com/',
       'Imagem': 'assets/images/wfxprod.png',
       'About': 'Website developed with angular 8, I developed the whole website to show some of my creative projects'
-    }  ,
+    },
     {
       'Title': 'Omint - Wordpress',
       'Link': 'https://www.omint.com.br/en/',

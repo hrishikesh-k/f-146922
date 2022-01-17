@@ -1,20 +1,21 @@
 <section> 
   <div class="projects">
-    <ng-container class="project" *ngFor="let project of projects">
-      <a 
-        class="project-card" 
-        [href]="project.Link"
-        [target]="project.Link ? '_blank' : '_self'">
-        <div class="desc">
-          <div class="desc-title">About:</div>
-          {{ project.About }}
-          <div class="line"></div>
-        </div>
-        <div class="image" [style.background-image]="'url(' + project.Imagem + ')'"></div>
-        <div class="project-title">{{ project.Title }}</div>
-
-      </a>
+    <ng-container *ngIf="!(page === 'Projetos-Front')">
+      <ng-container *ngFor="let project of projects">
+        <app-project-item [project]="project"></app-project-item>
+      </ng-container>
     </ng-container>
   </div>
+
+  <ng-container *ngIf="page === 'Projetos-Front'">
+    <ng-container *ngFor="let subCategoryName of subCategoryNames">
+      <div class="sub-category-name">{{ subCategoryName }}</div>
+      <div class="projects">
+        <ng-container *ngFor="let project of subCategoryProjects[subCategoryName]">
+          <app-project-item [project]="project"></app-project-item>
+        </ng-container>
+      </div>
+    </ng-container>
+  </ng-container>
   <app-intranets *ngIf="page === 'Projects' && projects && projects.length"></app-intranets>
 </section>
