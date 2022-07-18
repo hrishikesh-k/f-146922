@@ -21,18 +21,14 @@ export class SkillComponent implements OnInit {
     },
     {
       name: 'Scss',
+      level: 6,
+    },
+    {
+      name: 'React',
       level: 5,
     },
     {
-      name: 'VueJS',
-      level: 3,
-    },
-    /*{
-      name: 'React',
-      level: 4,
-    },*/
-    {
-      name: 'React',
+      name: 'Redux',
       level: 5,
     },
     {
@@ -61,7 +57,7 @@ export class SkillComponent implements OnInit {
     },
     {
       name: 'Bootstrap',
-      level: 4,
+      level: 6,
     },
     {
       name: 'WordPress',
@@ -96,8 +92,8 @@ export class SkillComponent implements OnInit {
       level: 3,
     },
     {
-      name: 'Redux',
-      level: 5,
+      name: 'VueJS',
+      level: 3,
     },
   ];
 
