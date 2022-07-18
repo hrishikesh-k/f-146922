@@ -128,31 +128,25 @@ export const projects = {
       'Imagem': 'assets/images/nintendo-site/desafio-01.jpg',
       'About': 'Design developed to a challenge to help a friend study front-end'
     },
-    {
-      'Title': 'WFX Produtora de Histórias',
-      'Link': 'https://www.wfxproducoes.com/',
-      'Imagem': 'assets/images/wfxprod.png',
-      'About': 'Website developed with angular 8, I developed the whole website to show some of my creative projects'
-    },
   ],
   'Projects': [
      {
-      'Title': 'SampaRural - Angular',
+      'Title': 'SampaRural - Angular 9',
       'Link': 'https://sampamaisrural.prefeitura.sp.gov.br/',
       'Imagem': 'assets/images/map-sprural.png',
       'About': 'Website developed with angular 9, I developed the whole website, creating pages, API integrations and a form generator'
     },
     {
-      'Title': 'MeuCarroNovo - Angular',
+      'Title': 'MeuCarroNovo - Angular 7',
       'Link': 'https://www.meucarronovo.com.br',
       'Imagem': 'assets/images/meucarronovo.png',
       'About': 'Website developed with angular 7, I developed the analytics, some layouts ajusts, bugs corrections, changes of integration with API and also developed pages to another projects in the meucarronovo system'
     },
     {
-      'Title': 'WFX Produtora de Histórias - Angular',
-      'Link': 'https://www.wfxproducoes.com/',
-      'Imagem': 'assets/images/wfxprod.png',
-      'About': 'Website developed with angular 8, I developed the whole website to show some of my creative projects'
+      'Title': 'Jurema - Angular 13',
+      'Link': 'https://www.jurema.com.br/',
+      'Imagem': 'assets/images/jurema.png',
+      'About': 'Website developed with angular 13, I developed the whole website, creating pages and API integrations'
     },
     {
       'Title': 'Omint - Wordpress',

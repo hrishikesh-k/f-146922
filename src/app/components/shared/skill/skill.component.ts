@@ -27,9 +27,13 @@ export class SkillComponent implements OnInit {
       name: 'VueJS',
       level: 3,
     },
-    {
+    /*{
       name: 'React',
       level: 4,
+    },*/
+    {
+      name: 'React',
+      level: 5,
     },
     {
       name: 'AngularJS',
@@ -92,8 +96,8 @@ export class SkillComponent implements OnInit {
       level: 3,
     },
     {
-      name: 'Insomnia',
-      level: 3,
+      name: 'Redux',
+      level: 5,
     },
   ];
 
