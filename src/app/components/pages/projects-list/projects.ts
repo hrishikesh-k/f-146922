@@ -159,6 +159,12 @@ export const projects = {
       'Link': 'https://luvieh.com/',
       'Imagem': 'assets/images/luvieh.png',
       'About': 'E-commerce developed with Shopify, a plataform like Wordpress. I made some modifications that the client wanted, edited the theme and created customized pages'
+    },
+    {
+      'Title': 'Diário do Clima - React',
+      'Link': '',
+      'Imagem': 'assets/images/diario.png',
+      'About': 'Website developed with React 18, I developed the whole website, creating pages, API integrations and configuring the project with webpack, eslit and unit tests.'
     }
   ]
 }
