@@ -17,6 +17,13 @@ export const subCategoryLevel = {
 export const projects = {
   'Projetos-Front': [
     {
+      'Title': 'Alamanda - React',
+      'subCategory': 'React',
+      'Link': 'https://alamandaeditora.netlify.app',
+      'Imagem': 'assets/images/alamanda.png',
+      'About': 'website developed in React, for a demo and study'
+    },
+    {
       'Title': 'TvShow - React',
       'subCategory': 'React',
       'Link': 'https://lucasmendoncateste.netlify.com/',
