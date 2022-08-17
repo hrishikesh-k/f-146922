@@ -7,8 +7,8 @@ export interface Project {
 }
 
 export const subCategoryLevel = {
-  Angular: 1,
-  React: 2,
+  Angular: 2,
+  React: 1,
   JQuery: 3,
   VueJS: 4,
   AngularJS: 5,
