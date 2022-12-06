@@ -143,7 +143,7 @@ export const projects = {
       'About': 'Website developed with angular 7, I developed the analytics, some layouts ajusts, bugs corrections, changes of integration with API and also developed pages to another projects in the meucarronovo system'
     },
     {
-      'Title': 'Alamanda - React e NestJS',
+      'Title': 'Alamanda - React And NestJS',
       'Link': 'https://vimeo.com/778621074',
       'Imagem': 'assets/images/alamanda-site-print.png',
       'About': 'E-Commerce (full functional, with admin area) that I designed and developed from scratch with React and NestJS'
