@@ -17,13 +17,6 @@ export const subCategoryLevel = {
 export const projects = {
   'Projetos-Front': [
     {
-      'Title': 'Alamanda - React',
-      'subCategory': 'React',
-      'Link': 'https://alamandaeditora.netlify.app',
-      'Imagem': 'assets/images/alamanda.png',
-      'About': 'website developed in React, for a demo and study'
-    },
-    {
       'Title': 'TvShow - React',
       'subCategory': 'React',
       'Link': 'https://lucasmendoncateste.netlify.com/',
@@ -150,10 +143,10 @@ export const projects = {
       'About': 'Website developed with angular 7, I developed the analytics, some layouts ajusts, bugs corrections, changes of integration with API and also developed pages to another projects in the meucarronovo system'
     },
     {
-      'Title': 'Jurema - Angular 13',
-      'Link': 'https://www.jurema.com.br/',
-      'Imagem': 'assets/images/jurema.png',
-      'About': 'Website developed with angular 13, I developed the whole website, creating pages and API integrations'
+      'Title': 'Alamanda - React e NestJS',
+      'Link': 'https://vimeo.com/778621074',
+      'Imagem': 'assets/images/alamanda-site-print.png',
+      'About': 'E-Commerce (full functional, with admin area) that I designed and developed from scratch with React and NestJS'
     },
     {
       'Title': 'Omint - Wordpress',
@@ -169,7 +162,7 @@ export const projects = {
     },
     {
       'Title': 'Diário do Clima - React',
-      'Link': '',
+      'Link': 'https://diariodoclima.jurema.la/',
       'Imagem': 'assets/images/diario.png',
       'About': 'Website developed with React 18, I developed the whole website, creating pages, API integrations and configuring the project with webpack, eslit and unit tests.'
     }
