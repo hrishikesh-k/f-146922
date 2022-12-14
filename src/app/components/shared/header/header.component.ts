@@ -6,7 +6,6 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  @Output() onPageChange: EventEmitter<String> = new EventEmitter();
   showMobileMenu = false;
 
   constructor() { }
@@ -14,8 +13,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  onClickLink(pageName) {
-    this.onPageChange.emit(pageName);
+  onClickLink() {
     this.showMobileMenu = false;
   }
 

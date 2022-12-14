@@ -1,4 +1,5 @@
-import { Component, Input, OnChanges } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Project, projects, subCategoryLevel } from './projects';
 
 @Component({
@@ -6,20 +7,23 @@ import { Project, projects, subCategoryLevel } from './projects';
   templateUrl: './projects-list.component.html',
   styleUrls: ['./projects-list.component.scss']
 })
-export class ProjectsListComponent implements OnChanges {
+export class ProjectsListComponent implements OnInit {
   projects: Project[] = [];
   subCategoryProjects = {};
   subCategoryNames: string[] = [];
-  @Input() page = '';
+  page = '';
 
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) { }
 
-  ngOnChanges() {
+  ngOnInit() {
+    this.page = this.router.url.split('projects/')[1] || 'main';
     this.projects = projects[this.page] || [];
     this.subCategoryProjects = {};
     this.subCategoryNames = [];
 
-    if(this.page === 'Projetos-Front') {
+    if(this.page === 'demos') {
       this.projects.forEach(project => {
         if(!this.subCategoryProjects[project.subCategory]) {
           this.subCategoryProjects[project.subCategory] = [];

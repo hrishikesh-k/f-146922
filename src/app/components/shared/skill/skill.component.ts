@@ -13,7 +13,7 @@ export class SkillComponent implements OnInit {
   skills: Skill[] = [
     {
       name: 'Angular 7+',
-      level: 5,
+      level: 6,
     },
     {
       name: 'Typescript',
@@ -25,7 +25,7 @@ export class SkillComponent implements OnInit {
     },
     {
       name: 'React',
-      level: 5,
+      level: 6,
     },
     {
       name: 'Redux',
@@ -94,6 +94,14 @@ export class SkillComponent implements OnInit {
     {
       name: 'VueJS',
       level: 3,
+    },
+    {
+      name: 'NestJS',
+      level: 3,
+    },
+    {
+      name: 'MySQL',
+      level: 5,
     },
   ];
 

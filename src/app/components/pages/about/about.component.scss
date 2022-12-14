@@ -124,12 +124,15 @@ hr {
   margin: 20px 0;
 }
 
-.item-desc {
-  padding-left: 15px;
-}
+
 
 .italic {
   font-style: italic;
+
+  b {
+    color: rgba(0,0,0, 0.6);
+    font-size: 15px;
+  }
 }
 
 .project-name {
@@ -170,7 +173,11 @@ hr {
 
   .contact-hover {
     padding: 5px;
-    text-align: center;
+    text-align: left;
+    
+    @media only screen and (max-width: $mobile-size) {
+      text-align: right;
+    }
   }
 
   img {

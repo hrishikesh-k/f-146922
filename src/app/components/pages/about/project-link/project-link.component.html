@@ -1,0 +1,14 @@
+<ng-container>
+  <ng-container>
+    <a target="_blank" [href]="url" *ngIf="url">
+      <div class="text-item item-desc">
+        {{desc}}
+      </div>
+    </a>
+    <a *ngIf="!url">
+      <div class="text-item item-desc">
+        {{desc}}
+      </div>
+    </a>
+  </ng-container>
+</ng-container>

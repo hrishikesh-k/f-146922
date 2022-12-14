@@ -11,7 +11,8 @@ import { IntranetsComponent } from './components/shared/intranets/intranets.comp
 import { MainComponent } from './components/pages/main/main.component';
 import { SkillComponent } from './components/shared/skill/skill.component';
 import { ProjectItemComponent } from './components/shared/project-item/project-item.component';
-import { DesignProjectComponent } from './components/pages/design-project/design-project.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ProjectLinkComponent } from './components/pages/about/project-link/project-link.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +25,12 @@ import { DesignProjectComponent } from './components/pages/design-project/design
     MainComponent,
     SkillComponent,
     ProjectItemComponent,
-    DesignProjectComponent,
+    ProjectLinkComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
