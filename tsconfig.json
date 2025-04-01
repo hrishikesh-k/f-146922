@@ -11,6 +11,9 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "ES2022",
+    "paths": {
+      "zone.js/dist/zone": ["node_modules/zone.js"]
+    },
     "typeRoots": [
       "node_modules/@types"
     ],
