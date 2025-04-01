@@ -19,7 +19,7 @@ export const projects = {
     {
       'Title': 'TvShow - React',
       'subCategory': 'React',
-      'Link': 'https://lucasmendoncateste.netlify.com/',
+      'Link': 'https://lucasmendoncateste.netlify.app/',
       'Imagem': 'assets/images/tvshow.png',
       'About': 'Developed in React on a test required by a company during the hiring process'
     },
@@ -34,77 +34,42 @@ export const projects = {
     {
       'Title': 'Blog - Angular',
       'subCategory': 'Angular',
-      'Link': 'https://angularblog.netlify.com/',
+      'Link': 'https://angularblog.netlify.app/',
       'Imagem': 'assets/images/blog.png',
       'About': 'A study about Angular'
     },
     {
-      'Title': 'Social Media - React',
-      'subCategory': 'React',
-      'Link': 'http://lucasmendoncapportfolio.atwebpages.com/pages/SocialMedia/SocialMedia.html',
-      'Imagem': 'assets/images/SocialMedia.png',
-      'About': 'A study about React'
-    },
-    {
-      'Title': 'Dashboard - AngularJS',
-      'subCategory': 'AngularJS',
-      'Link': 'http://lucasmendoncapportfolio.atwebpages.com/pages/GerenciamentoProjetos.html',
-      'Imagem': 'assets/images/dashboard.png',
-      'About': 'A study about AngularJS and Javascript'
-    },
-    {
       'Title': 'LP Eixo Platina - React',
       'subCategory': 'React',
-      'Link': 'https://eixo-lp.netlify.com/',
+      'Link': 'https://eixo-lp.netlify.app/',
       'Imagem': 'assets/images/eixo.png',
       'About': 'Page developed in React, for Eixo Platina, to show a new building project'
     },
     {
       'Title': 'pneuStore - React',
       'subCategory': 'React',
-      'Link': 'https://pneu-store.netlify.com/',
+      'Link': 'https://pneu-store.netlify.app/',
       'Imagem': 'assets/images/pneus.png',
       'About': 'Page developed to a PneuStore competition'
     },
     {
-      'Title': 'E-Commerce - JQuery',
-      'subCategory': 'JQuery',
-      'Link': 'http://lucasmendoncapportfolio.atwebpages.com/pages/Vendas.html',
-      'Imagem': 'assets/images/ecomerce.png',
-      'About': 'A study about JQuery'
-    },
-    {
       'Title': 'Zara - React',
       'subCategory': 'React',
-      'Link': 'https://gtc-lucasmendonca.netlify.com/',
+      'Link': 'https://gtc-lucasmendonca.netlify.app/',
       'Imagem': 'assets/images/gtc.png',
       'About': 'Developed in React on a test required by a company during the hiring process'
     },
     {
-      'Title': 'Checklist - VueJS',
-      'subCategory': 'VueJS',
-      'Link': 'http://lucasmendoncapportfolio.atwebpages.com/pages/checklist/',
-      'Imagem': 'assets/images/vue.png',
-      'About': 'A study about VueJS'
-    },
-    {
-      'Title': 'Login - JQuery',
-      'subCategory': 'JQuery',
-      'Link': 'http://lucasmendoncapportfolio.atwebpages.com/pages/Login.html',
-      'Imagem': 'assets/images/login.png',
-      'About': 'A study about JQuery'
-    },
-    {
       'Title': 'Marvel Characters - React',
       'subCategory': 'React',
-      'Link': 'https://marveltestlucasmendonca.netlify.com/',
+      'Link': 'https://marveltestlucasmendonca.netlify.app/',
       'Imagem': 'assets/images/marvelTest.png',
       'About': 'Developed in React on a test required by a company during the hiring process'
     },
     {
       'Title': 'profit - React',
       'subCategory': 'React',
-      'Link': 'https://test-profit-lucas-mendonca.netlify.com/',
+      'Link': 'https://test-profit-lucas-mendonca.netlify.app/',
       'Imagem': 'assets/images/profit.png',
       'About': 'Developed in React on a test required by a company during the hiring process'
     }
