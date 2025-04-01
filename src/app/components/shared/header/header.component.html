@@ -1,5 +1,5 @@
 <section>
-  <div class="logo" (click)="onClickLink('Projects')">
+  <div class="logo" (click)="onClickLink()">
     Lucas Mendonça <span class="subtitle">- Portfolio</span>
   </div>
   <div class="line"></div>
@@ -16,7 +16,7 @@
   </div>
 </section>
 
-<div class="mobile-menu-modal" *ngIf="showMobileMenu" (click)="onClickLink()">
+<div class="mobile-menu-modal" *ngIf="showMobileMenu" (click)="onClickMobileMenu()">
   <a routerLink="/">Main Projects</a>
   <a routerLink="/projects/demos">Demos</a>
   <a routerLink="/projects/designs">Design</a>

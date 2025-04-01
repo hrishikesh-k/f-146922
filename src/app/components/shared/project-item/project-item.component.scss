@@ -1,25 +1,33 @@
-@import '../../../../assets/variables.scss';
+@use '../../../../assets/variables.scss' as *;
 
 
 a {
   text-decoration: none;
 }
 
-:host{
-  margin: 20px 20px;
-  width: calc(33.33% - 44px);
-  height: 300px;
-  overflow: hidden;
-  position: relative;
-  box-shadow: $box-shadow;
-  animation: init 0.5s;
-  border-radius: 10px;
-  transition: 0.3s;
-  border: 2px solid rgba(0,0,0, 0.2);
-
-  @media only screen and (max-width: $mobile-size) {
+@media only screen and (max-width: $mobile-size) {
+  :host {
     width: 100%;
     transition: 0s;
+  }
+
+  .image:hover {
+    transform: none;
+  }
+}
+
+:host{
+  & {
+    margin: 20px 20px;
+    width: calc(33.33% - 44px);
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: $box-shadow;
+    animation: init 0.5s;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 2px solid rgba(0,0,0, 0.2);
   }
 
   .image {
@@ -35,10 +43,6 @@ a {
     .desc {
       top: 0;
     }
-
-    @media only screen and (max-width: $mobile-size) {
-      transform: none;
-    }
   }
 }
 
@@ -50,18 +54,20 @@ a {
 }
 
 .desc {
-  padding: 20px;
-  position: absolute;
-  width: calc(100% - 40px);
-  top: -100%;
-  transition: 0.4s;
-  height: calc(100% - 40px - 30px);
-  background-color: rgba(255, 255, 255, 0.95);
-  color: $color-dark;
-  line-height: 28px;
-  letter-spacing: 1.5px;
-  overflow: hidden;
-  border-bottom: 1px solid $color-primary;
+  & {
+    padding: 20px;
+    position: absolute;
+    width: calc(100% - 40px);
+    top: -100%;
+    transition: 0.4s;
+    height: calc(100% - 40px - 30px);
+    background-color: rgba(255, 255, 255, 0.95);
+    color: $color-dark;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+    overflow: hidden;
+    border-bottom: 1px solid $color-primary;
+  }
 
   .desc-title {
     margin-top: 10px;

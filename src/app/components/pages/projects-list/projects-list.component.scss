@@ -1,8 +1,10 @@
-@import '../../../../assets/variables.scss';
+@use '../../../../assets/variables.scss' as *;
 
 section {
-  min-height: calc(100vh - 31px - 83px);
-  margin: 20px 5%;
+  & {
+    min-height: calc(100vh - 31px - 83px);
+    margin: 20px 5%;
+  }
 
   @media only screen and (max-width: $mobile-size) {
     margin: 20px 0;

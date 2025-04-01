@@ -1,9 +1,17 @@
-@import '../../../../assets/variables.scss';
+@use '../../../../assets/variables.scss' as *;
 
 .skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media only screen and (max-width: $mobile-size) {
+  .skill {
+    width: calc(50% - 10px);
+    margin: 15px 0;
+    min-width: unset;
+  }
 }
 
 .skill {
@@ -12,12 +20,6 @@
   align-items: center;
   min-width: 180px;
   width: calc(25% - 20px);
-
-  @media only screen and (max-width: $mobile-size) {
-    width: calc(50% - 10px);
-    margin: 15px 0;
-    min-width: unset;
-  }
 }
 
 .skill-name {

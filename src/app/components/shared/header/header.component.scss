@@ -1,4 +1,4 @@
-@import '../../../../assets/variables.scss';
+@use '../../../../assets/variables.scss' as *;
 
 section {
   padding: 15px 25px;
@@ -24,11 +24,11 @@ section {
   }
 }
 
-.mobile-menu {
-  @media only screen and (min-width: $mobile-size) {
-    display: none;
-  }
+@media only screen and (min-width: $mobile-size) {
+  .mobile-menu {display: none;}
+}
 
+.mobile-menu {
   .bar {
     width: 25px;
     height: 3px;
@@ -37,21 +37,25 @@ section {
   }
 }
 
-.mobile-menu-modal {
-  @media only screen and (min-width: $mobile-size) {
+@media only screen and (min-width: $mobile-size) {
+  .mobile-menu-modal {
     display: none;
   }
+}
 
-  padding: 10px 0;
-  position: fixed;
-  top: 65px;
-  width: 50%;
-  text-align: center;
-  right: 0;
-  background-color: $color-white;
-  z-index: 999;
-  border-radius: 10px;
-  box-shadow: $box-shadow;
+.mobile-menu-modal {
+  & {
+    padding: 10px 0;
+    position: fixed;
+    top: 65px;
+    width: 50%;
+    text-align: center;
+    right: 0;
+    background-color: $color-white;
+    z-index: 999;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+  }
 
   a {
     color: $color-dark;
@@ -63,23 +67,25 @@ section {
   }
 }
 
-.links {
-  @media only screen and (max-width: $mobile-size) {
-    display: none;
-  }
+@media only screen and (max-width: $mobile-size) {
+  .links {display: none;}
+}
 
+.links {
   a {
     padding: 15px 0;
   }
 }
 
 a {
-  text-decoration: none;
-  margin: 0 15px;
-  color: $color-white;
-  z-index: 99;
-  position: relative;
-  cursor: pointer;
+  & {
+    text-decoration: none;
+    margin: 0 15px;
+    color: $color-white;
+    z-index: 99;
+    position: relative;
+    cursor: pointer;
+  }
 
   &::after {
     content: '';
