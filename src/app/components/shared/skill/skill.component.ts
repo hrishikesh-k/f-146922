@@ -14,7 +14,7 @@ export interface Skill {
 export class SkillComponent implements OnInit {
   skills: Skill[] = [
     {
-      name: 'Angular 7+',
+      name: 'Angular 12+',
       level: 6,
     },
     {

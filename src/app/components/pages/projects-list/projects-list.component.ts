@@ -33,7 +33,7 @@ export class ProjectsListComponent implements OnInit {
     this.subCategoryProjects= {};
     this.subCategoryNames = [];
 
-    if(this.page === 'main') {
+    if(this.page === 'demos') {
       this.projects.forEach(project => {
         if(!project.subCategory) {
           return;

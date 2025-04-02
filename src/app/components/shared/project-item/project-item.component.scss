@@ -5,16 +5,7 @@ a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: $mobile-size) {
-  :host {
-    width: 100%;
-    transition: 0s;
-  }
 
-  .image:hover {
-    transform: none;
-  }
-}
 
 :host{
   & {
@@ -28,6 +19,10 @@ a {
     border-radius: 10px;
     transition: 0.3s;
     border: 2px solid rgba(0,0,0, 0.2);
+    @media only screen and (max-width: $mobile-size) {
+      width: 100%;
+      transition: 0s;
+    }
   }
 
   .image {
@@ -42,6 +37,9 @@ a {
     transform: scale(1.1);
     .desc {
       top: 0;
+    }
+    @media only screen and (max-width: $mobile-size) {
+      transform: none;
     }
   }
 }

@@ -37,11 +37,7 @@ section {
   }
 }
 
-@media only screen and (min-width: $mobile-size) {
-  .mobile-menu-modal {
-    display: none;
-  }
-}
+
 
 .mobile-menu-modal {
   & {
@@ -54,26 +50,40 @@ section {
     background-color: $color-white;
     z-index: 999;
     border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     box-shadow: $box-shadow;
+  }
+  @media only screen and (min-width: $mobile-size) {
+    display: none;
   }
 
   a {
     color: $color-dark;
-    font-size: 24px;
-  }
+    font-size: 20px;
+    width: 100%;
+    margin: 0;
+    
+    div {
+      transition: 0.4s;
+      padding: 10px 0;
 
-  > div {
-    margin: 20px;
+      &:hover{
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+    }
   }
 }
 
-@media only screen and (max-width: $mobile-size) {
-  .links {display: none;}
-}
+
 
 .links {
   a {
     padding: 15px 0;
+  }
+  @media only screen and (max-width: $mobile-size) {
+    display: none;
   }
 }
 

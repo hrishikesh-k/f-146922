@@ -1,13 +1,13 @@
 <section> 
   <div class="projects">
-    <ng-container>
+    <ng-container *ngIf="page !== 'demos'">
       <ng-container *ngFor="let project of projects">
         <app-project-item [project]="project"></app-project-item>
       </ng-container>
     </ng-container>
   </div>
 
-  <ng-container>
+  <ng-container *ngIf="page === 'demos'">
     <ng-container *ngFor="let subCategoryName of subCategoryNames">
       <div class="sub-category-name">{{ subCategoryName }}</div>
       <div class="projects">

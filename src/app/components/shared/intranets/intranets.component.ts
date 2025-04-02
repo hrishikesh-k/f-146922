@@ -30,6 +30,10 @@ export class IntranetsComponent implements OnInit {
       name: 'Nexa',
       image: 'nexa.png',
     },
+    {
+      name: 'Anytime Fitness',
+      image: 'af.png',
+    },
   ]
 
   constructor() { }
