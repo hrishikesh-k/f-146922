@@ -25,56 +25,56 @@ export const subCategoryLevel: Record<SubCategoryNames, number> = {
 export const projects: Record<string, Project[]> = {
   'demos': [
     {
-      'Title': 'This Portfolio - Angular',
+      'Title': 'This Portfolio - Angular - 2020',
       'subCategory': 'Angular',
       'Link': '',
       'Imagem': 'assets/images/portfolio.png',
       'About': 'A way to show my work'
     },
     {
-      'Title': 'Blog - Angular',
+      'Title': 'Blog - Angular (2020)',
       'subCategory': 'Angular',
       'Link': 'https://angularblog.netlify.app/',
       'Imagem': 'assets/images/blog.png',
       'About': 'A study about Angular'
     },
     {
-      'Title': 'LP Eixo Platina - React',
+      'Title': 'LP Eixo Platina - React - 2019',
       'subCategory': 'React',
       'Link': 'https://eixo-lp.netlify.app/',
       'Imagem': 'assets/images/eixo.png',
       'About': 'Page developed in React, for Eixo Platina, to show a new building project'
     },
     {
-      'Title': 'pneuStore - React',
+      'Title': 'pneuStore - React - 2019',
       'subCategory': 'React',
       'Link': 'https://pneu-store.netlify.app/',
       'Imagem': 'assets/images/pneus.png',
       'About': 'Page developed to a PneuStore competition'
     },
     {
-      'Title': 'Zara - React',
+      'Title': 'Zara - React - 2019',
       'subCategory': 'React',
       'Link': 'https://gtc-lucasmendonca.netlify.app/',
       'Imagem': 'assets/images/gtc.png',
       'About': 'Developed in React on a test required by a company during the hiring process'
     },
     {
-      'Title': 'Marvel Characters - React',
+      'Title': 'Marvel Characters - React - 2018',
       'subCategory': 'React',
       'Link': 'https://marveltestlucasmendonca.netlify.app/',
       'Imagem': 'assets/images/marvelTest.png',
       'About': 'Developed in React on a test required by a company during the hiring process'
     },
     {
-      'Title': 'profit - React',
+      'Title': 'profit - React - 2019',
       'subCategory': 'React',
       'Link': 'https://test-profit-lucas-mendonca.netlify.app/',
       'Imagem': 'assets/images/profit.png',
       'About': 'Developed in React on a test required by a company during the hiring process'
     },
     {
-      'Title': 'DashBoard - Angular JS',
+      'Title': 'DashBoard - Angular JS - 2018',
       'subCategory': 'AngularJS',
       'Link': 'https://taskdashboardlucas.netlify.app/',
       'Imagem': 'assets/images/dashboard.png',

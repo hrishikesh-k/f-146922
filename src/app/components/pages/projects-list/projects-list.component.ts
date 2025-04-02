@@ -49,6 +49,22 @@ export class ProjectsListComponent implements OnInit {
       this.subCategoryNames.sort((nameA, nameB) => {
         return subCategoryLevel[nameA as SubCategoryNames] - subCategoryLevel[nameB as SubCategoryNames];
       })
+
+      this.subCategoryNames.forEach(name => {
+        this.subCategoryProjects[name].sort((projectA, projectB) => {
+          const bTitle = projectB.Title.split('-');
+          const aTitle = projectA.Title.split('-');
+          return bTitle[bTitle.length - 1].localeCompare(aTitle[aTitle.length - 1]);
+        });
+      });
+    }
+
+    if(this.page === 'main') {
+      this.projects.sort((projectA, projectB) => {
+        const bTitle = projectB.Title.split('-');
+        const aTitle = projectA.Title.split('-');
+        return bTitle[bTitle.length - 1].localeCompare(aTitle[aTitle.length - 1]);
+      });
     }
 
   }
