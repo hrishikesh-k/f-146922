@@ -1,9 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-intranets',
   templateUrl: './intranets.component.html',
-  styleUrls: ['./intranets.component.scss']
+  styleUrls: ['./intranets.component.scss'],
+  imports: [CommonModule],
 })
 export class IntranetsComponent implements OnInit {
 

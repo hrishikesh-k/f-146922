@@ -1,11 +1,11 @@
 <a
-  [href]="project.Link"
-  [target]="project.Link ? '_blank' : '_self'">
+  [href]="project?.Link"
+  [target]="project?.Link ? '_blank' : '_self'">
   <div class="desc">
     <div class="desc-title">About:</div>
-    {{ project.About }}
+    {{ project?.About }}
     <div class="line"></div>
   </div>
-  <div class="image" [style.background-image]="'url(' + project.Imagem + ')'"></div>
-  <div class="project-title">{{ project.Title }}</div>
+  <div class="image" [style.background-image]="'url(' + project?.Imagem + ')'"></div>
+  <div class="project-title">{{ project?.Title }}</div>
 </a>

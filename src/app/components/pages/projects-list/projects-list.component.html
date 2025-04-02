@@ -1,13 +1,13 @@
 <section> 
   <div class="projects">
-    <ng-container *ngIf="!(page === 'Projetos-Front')">
+    <ng-container>
       <ng-container *ngFor="let project of projects">
         <app-project-item [project]="project"></app-project-item>
       </ng-container>
     </ng-container>
   </div>
 
-  <ng-container *ngIf="page === 'Projetos-Front'">
+  <ng-container>
     <ng-container *ngFor="let subCategoryName of subCategoryNames">
       <div class="sub-category-name">{{ subCategoryName }}</div>
       <div class="projects">
@@ -17,5 +17,5 @@
       </div>
     </ng-container>
   </ng-container>
-  <app-intranets *ngIf="page === 'Projects' && projects && projects.length"></app-intranets>
+  <app-intranets *ngIf="page === 'main' && projects && projects.length"></app-intranets>
 </section>

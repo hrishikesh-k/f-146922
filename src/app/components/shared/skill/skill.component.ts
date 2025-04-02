@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 export interface Skill {
   name: string;
@@ -7,7 +8,8 @@ export interface Skill {
 @Component({
   selector: 'app-skill',
   templateUrl: './skill.component.html',
-  styleUrls: ['./skill.component.scss']
+  styleUrls: ['./skill.component.scss'],
+  imports: [CommonModule],
 })
 export class SkillComponent implements OnInit {
   skills: Skill[] = [

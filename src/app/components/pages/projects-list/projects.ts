@@ -3,10 +3,18 @@ export interface Project {
   Link: string;
   Imagem: string;
   About: string;
-  subCategory: string;
+  subCategory?: SubCategoryNames;
 }
 
-export const subCategoryLevel = {
+export type SubCategoryNames =
+  'React' |
+  'Angular' |
+  'JQuery' |
+  'VueJS' |
+  'AngularJS';
+
+
+export const subCategoryLevel: Record<SubCategoryNames, number> = {
   Angular: 2,
   React: 1,
   JQuery: 3,
@@ -14,7 +22,7 @@ export const subCategoryLevel = {
   AngularJS: 5,
 }
 
-export const projects = {
+export const projects: Record<string, Project[]> = {
   'demos': [
     {
       'Title': 'TvShow - React',
