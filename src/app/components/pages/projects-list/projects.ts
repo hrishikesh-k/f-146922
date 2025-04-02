@@ -25,14 +25,6 @@ export const subCategoryLevel: Record<SubCategoryNames, number> = {
 export const projects: Record<string, Project[]> = {
   'demos': [
     {
-      'Title': 'TvShow - React',
-      'subCategory': 'React',
-      'Link': 'https://lucasmendoncateste.netlify.app/',
-      'Imagem': 'assets/images/tvshow.png',
-      'About': 'Developed in React on a test required by a company during the hiring process'
-    },
-    
-    {
       'Title': 'This Portfolio - Angular',
       'subCategory': 'Angular',
       'Link': '',
