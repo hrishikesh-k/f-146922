@@ -72,7 +72,14 @@ export const projects: Record<string, Project[]> = {
       'Link': 'https://test-profit-lucas-mendonca.netlify.app/',
       'Imagem': 'assets/images/profit.png',
       'About': 'Developed in React on a test required by a company during the hiring process'
-    }
+    },
+    {
+      'Title': 'DashBoard - Angular JS',
+      'subCategory': 'AngularJS',
+      'Link': 'https://taskdashboardlucas.netlify.app/',
+      'Imagem': 'assets/images/dashboard.png',
+      'About': 'A way to show my work'
+    },
   ],
   'designs': [
     {
