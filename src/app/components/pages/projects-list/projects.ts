@@ -98,12 +98,12 @@ export const projects: Record<string, Project[]> = {
       'Title': 'Nintendo Website Redesign',
       'Link': 'https://www.behance.net/gallery/135246757/Nintendo-redesign',
       'Imagem': 'assets/images/nintendo-site/desafio-01.jpg',
-      'About': 'Design developed to a challenge to help a friend study front-end'
+      'About': 'Designed and developed to update my portfolio, using React and NodeJS'
     },
   ],
   'main': [
     {
-      'Title': 'Nintendo Website Redesign - React and NodeJS - 2025',
+      'Title': 'Nintendo - React and NodeJS - 2025',
       'Link': 'https://nintendostorebylucasmendonca.netlify.app/',
       'Imagem': 'assets/images/nintendo-site/desafio-01.jpg',
       'About': 'Designed and developed to update my portfolio, using React and NodeJS'
