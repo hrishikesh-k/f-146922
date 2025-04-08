@@ -102,6 +102,12 @@ export const projects: Record<string, Project[]> = {
     },
   ],
   'main': [
+    {
+      'Title': 'Nintendo Website Redesign - React and NodeJS - 2025',
+      'Link': 'https://nintendostorebylucasmendonca.netlify.app/',
+      'Imagem': 'assets/images/nintendo-site/desafio-01.jpg',
+      'About': 'Designed and developed to update my portfolio, using React and NodeJS'
+    },
      {
       'Title': 'SampaRural - Angular 9 - 2020',
       'Link': 'https://sampamaisrural.prefeitura.sp.gov.br/',
