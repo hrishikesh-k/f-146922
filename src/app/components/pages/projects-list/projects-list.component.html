@@ -1,11 +1,21 @@
 <section> 
-  <div class="projects">
-    <ng-container *ngIf="page !== 'demos'">
+  <ng-container *ngIf="page === 'main'">
+    <div class="sub-category-name">Latest works</div>
+    <div class="projects">
+      <ng-container *ngFor="let recent of recentWorks">
+        <app-project-item [project]="recent"></app-project-item>
+      </ng-container>
+    </div>
+  </ng-container>
+  
+  <ng-container *ngIf="page !== 'demos'">
+    <div class="sub-category-name">Other projects</div>
+    <div class="projects">
       <ng-container *ngFor="let project of projects">
         <app-project-item [project]="project"></app-project-item>
       </ng-container>
-    </ng-container>
-  </div>
+    </div>
+  </ng-container>
 
   <ng-container *ngIf="page === 'demos'">
     <ng-container *ngFor="let subCategoryName of subCategoryNames">

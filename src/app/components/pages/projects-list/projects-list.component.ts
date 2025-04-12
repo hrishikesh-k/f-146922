@@ -22,6 +22,7 @@ export class ProjectsListComponent implements OnInit {
   subCategoryProjects: SubCategory = {};
   subCategoryNames: string[] = [];
   page: PageType = 'main';
+  recentWorks = projects['recent'];
 
   constructor(
     private router: Router,

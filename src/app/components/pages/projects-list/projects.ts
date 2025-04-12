@@ -23,7 +23,29 @@ export const subCategoryLevel: Record<SubCategoryNames, number> = {
 }
 
 export const projects: Record<string, Project[]> = {
+  'recent': [
+    {
+      'Title': 'AnytimeFitness - React - current - 2023/2025',
+      'subCategory': 'React',
+      'Link': 'https://vimeo.com/1074964819/672ee796f2',
+      'Imagem': 'assets/images/anytime.png',
+      'About': "I created new features, did the maintenance and bug fixes. I worked together with the backend and design teams to deliver new tools to improve the user experience."
+    },
+    {
+      'Title': 'Nintendo Demo - React and NodeJS - 2025',
+      'Link': 'https://nintendostorebylucasmendonca.netlify.app/',
+      'Imagem': 'assets/images/nintendo-site/desafio-01.jpg',
+      'About': 'Designed and developed to update my portfolio, using React and NodeJS'
+    },
+  ],
   'demos': [
+    {
+      'Title': 'Nintendo Demo - React and NodeJS - 2025',
+      'subCategory': 'React',
+      'Link': 'https://nintendostorebylucasmendonca.netlify.app/',
+      'Imagem': 'assets/images/nintendo-site/desafio-01.jpg',
+      'About': 'Designed and developed to update my portfolio, using React and NodeJS'
+    },
     {
       'Title': 'This Portfolio - Angular - 2020',
       'subCategory': 'Angular',
@@ -102,12 +124,6 @@ export const projects: Record<string, Project[]> = {
     },
   ],
   'main': [
-    {
-      'Title': 'Nintendo - React and NodeJS - 2025',
-      'Link': 'https://nintendostorebylucasmendonca.netlify.app/',
-      'Imagem': 'assets/images/nintendo-site/desafio-01.jpg',
-      'About': 'Designed and developed to update my portfolio, using React and NodeJS'
-    },
      {
       'Title': 'SampaRural - Angular 9 - 2020',
       'Link': 'https://sampamaisrural.prefeitura.sp.gov.br/',
