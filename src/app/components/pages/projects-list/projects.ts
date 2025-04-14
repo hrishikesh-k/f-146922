@@ -111,21 +111,21 @@ export const projects: Record<string, Project[]> = {
       'About': 'Project designed in competition on FIAP, my graduation'
     },
     {
-      'Title': 'This Portfolio',
-      'Link': '',
-      'Imagem': 'assets/images/portfolio.png',
-      'About': 'A way to show my work'
-    },
-    {
       'Title': 'Nintendo Website Redesign',
       'Link': 'https://www.behance.net/gallery/135246757/Nintendo-redesign',
       'Imagem': 'assets/images/nintendo-site/desafio-01.jpg',
       'About': 'Designed and developed to update my portfolio, using React and NodeJS'
     },
+    {
+      'Title': 'This Portfolio',
+      'Link': '',
+      'Imagem': 'assets/images/portfolio.png',
+      'About': 'A way to show my work'
+    },
   ],
   'main': [
      {
-      'Title': 'SampaRural - Angular 9 - 2020',
+      'Title': 'SampaRural - Angular 9 - 2021',
       'Link': 'https://sampamaisrural.prefeitura.sp.gov.br/',
       'Imagem': 'assets/images/map-sprural.png',
       'About': 'Website developed with angular 9, I developed the whole website, creating pages, API integrations and a form generator'
@@ -147,20 +147,6 @@ export const projects: Record<string, Project[]> = {
       'Link': 'https://www.omint.com.br/en/',
       'Imagem': 'assets/images/omint.png',
       'About': 'Developed with Wordpress, I adjusted some layout bugs, created custom pages and edited the PHP integration'
-    },
-    
-    {
-      'Title': 'MeuCarroNovo - Advertise - Angular 7 - 2021',
-      'Link': 'https://www.meucarronovo.com.br/contrate/',
-      'Imagem': 'assets/images/anuncie.png',
-      'About': 'Website developed with angular 7, I developed the analytics, some layouts ajusts, bugs corrections, integration with API and also developed pages.'
-    },
-    
-    {
-      'Title': 'MeuCarroNovo - Seller Area - Angular 7 - 2021',
-      'Link': 'https://souanunciante.meucarronovo.com.br/',
-      'Imagem': 'assets/images/seller.png',
-      'About': 'Website developed with angular 7, I developed the analytics, some layouts ajusts, bugs corrections, integration with API and also developed pages.'
     },
     {
       'Title': 'Luvieh Jewellery - Shopify - 2021',

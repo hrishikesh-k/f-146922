@@ -18,7 +18,11 @@ export class SkillComponent implements OnInit {
       level: 6,
     },
     {
-      name: 'Typescript',
+      name: 'React',
+      level: 6,
+    },
+    {
+      name: 'TypeScript',
       level: 6,
     },
     {
@@ -26,12 +30,8 @@ export class SkillComponent implements OnInit {
       level: 6,
     },
     {
-      name: 'React',
-      level: 6,
-    },
-    {
       name: 'Redux',
-      level: 5,
+      level: 6,
     },
     {
       name: 'AngularJS',
@@ -42,8 +42,8 @@ export class SkillComponent implements OnInit {
       level: 6,
     },
     {
-      name: 'JQuery',
-      level: 5,
+      name: 'React Query',
+      level: 6,
     },
     {
       name: 'Javascript',
@@ -62,16 +62,8 @@ export class SkillComponent implements OnInit {
       level: 6,
     },
     {
-      name: 'WordPress',
+      name: 'Webpack',
       level: 3,
-    },
-    {
-      name: 'Jenkins',
-      level: 4,
-    },
-    {
-      name: 'Sonarqube',
-      level: 4,
     },
     {
       name: 'Rest API',
@@ -79,14 +71,14 @@ export class SkillComponent implements OnInit {
     },
     {
       name: 'Adobe Package',
-      level: 2,
+      level: 4,
     },
     {
-      name: 'Unit testing (Jest)',
+      name: 'Unit testing',
       level: 5,
     },
     {
-      name: 'Testing e2e (Jasmine)',
+      name: 'Testing e2e',
       level: 5,
     },
     {
@@ -94,16 +86,16 @@ export class SkillComponent implements OnInit {
       level: 3,
     },
     {
-      name: 'VueJS',
-      level: 3,
-    },
-    {
-      name: 'NestJS',
-      level: 3,
+      name: 'Zustand',
+      level: 6,
     },
     {
       name: 'MySQL',
       level: 5,
+    },
+    {
+      name: 'NodeJS',
+      level: 4,
     },
   ];
 

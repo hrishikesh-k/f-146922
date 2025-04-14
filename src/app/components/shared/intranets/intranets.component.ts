@@ -11,28 +11,28 @@ export class IntranetsComponent implements OnInit {
 
   companies = [
     {
-      name: 'Tallento Engenharia',
-      image: 'tallento.png',
-    },
-    {
-      name: 'Class Solutions',
-      image: 'class.png',
-    },
-    {
-      name: 'Hersheys',
-      image: 'hersheys.png',
+      name: 'Anytime Fitness',
+      image: 'af.png',
     },
     {
       name: 'Newton',
       image: 'newton.png',
     },
     {
+      name: 'Hersheys',
+      image: 'hersheys.png',
+    },
+    {
       name: 'Nexa',
       image: 'nexa.png',
     },
     {
-      name: 'Anytime Fitness',
-      image: 'af.png',
+      name: 'Tallento Engenharia',
+      image: 'tallento.png',
+    },
+    {
+      name: 'Class Solutions',
+      image: 'class.png',
     },
   ]
 

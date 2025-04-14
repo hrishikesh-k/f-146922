@@ -15,7 +15,6 @@ a {
     overflow: hidden;
     position: relative;
     box-shadow: $box-shadow;
-    animation: init 0.5s;
     border-radius: 10px;
     transition: 0.3s;
     border: 2px solid rgba(0,0,0, 0.2);
@@ -31,6 +30,7 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    animation: bannerLoading 3s infinite ease-in-out;
   }
 
   &:hover {
@@ -74,13 +74,16 @@ a {
   }
 }
 
-@keyframes init {
+@keyframes bannerLoading {
   0% {
-    opacity: 0;
-    transform: scale(0.8);
+    background-color: #c7c7c7;
   }
+
+  50% {
+    background-color: #b4b4b4;
+  }
+
   100% {
-    opacity: 1;
-    transform: scale(1);
+    background-color: #c7c7c7;
   }
 }

@@ -151,6 +151,7 @@ hr {
 
 .project-name {
   font-weight: bold;
+  font-size: 15px;
 }
 
 .line {
@@ -165,64 +166,9 @@ hr {
   opacity: 1;
 }
 
-.contact {
-  & {
-    border: 2px solid #000;
-    z-index: 98;
-    left: -2px;
-    top: calc(100% - 250px);
-    background-color: $color-white;
-    position: fixed;
-    padding: 5px 10px;
-    box-shadow: $box-shadow;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    cursor: pointer;
-  }
-
-  @media only screen and (max-width: $mobile-size) {
-    right: -2px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    top: calc(100% - 220px);
-    left: unset;
-  }
-
-  .contact-hover {
-    padding: 5px;
-    text-align: left;
-    
-    @media only screen and (max-width: $mobile-size) {
-      text-align: right;
-    }
-  }
-
-  img {
-    width: 40px;
-  }
-
-  &:hover {
-    .contact-methods {
-      height: 130px;
-    }
-  }
-
-  .contact-methods {
-    transition: 0.4s;
-    height: 0;
-    overflow: hidden;
-  }
-
-  .contact-method {
-    margin: 15px 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-  }
-}
-
-.opacity-icon {
-  opacity: 0.9;
+li {
+  list-style-type: disc; 
+  list-style-position: inside;
+  text-indent: -1.5em;
+  padding-left: 1.6em;
 }
