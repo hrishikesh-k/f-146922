@@ -4,7 +4,6 @@ import { useFetchProjects } from "@/api/projects";
 import { useTranslations } from "next-intl";
 import Project from "./Project";
 import Carousel from "../../Shared/Carousel";
-import Loader from "@/components/Shared/Loader";
 
 export default function MainProjects () {
   const t = useTranslations();
@@ -12,7 +11,6 @@ export default function MainProjects () {
   const {
     data,
     error,
-    loading,
   }= useFetchProjects();
 
   return (
@@ -25,14 +23,13 @@ export default function MainProjects () {
           {t('errorProjects')}
         </div>
       }
-      {loading &&  
-        <Loader/>
+      {!error && 
+        <Carousel>
+          {
+            data.map(project => <Project project={project} key={project.id} />)
+          }
+        </Carousel>
       }
-      <Carousel>
-        {
-          data.map(project => <Project project={project} key={project.id} />)
-        }
-      </Carousel>
     </div>
   )
 }
