@@ -22,9 +22,7 @@ export default function Carousel({ children }: { children: ReactNode[]}) {
       }, 0);
       setWidth(totalWidth);
       setIsRendered(true);
-     
-      
-    }, 200);
+    }, 400);
 
     if(containerRef.current?.children[0]) {
       const childStyle = getComputedStyle(containerRef.current.children[0]);
