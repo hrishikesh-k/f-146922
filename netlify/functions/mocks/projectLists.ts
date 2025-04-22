@@ -22,11 +22,11 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'AnytimeFitness',
-        description: 'New features and maintenance with backend and design teams.'
+        description: 'Developed New features and did the maintenance collaborating with the design and product teams.'
       },
       pt: {
         name: 'AnytimeFitness',
-        description: 'Novas funcionalidades e manutenção junto aos times de backend e design.'
+        description: 'Desenvolvi novas funcionalidades e fiz a manutenção, colaborando com os times de design e produto.'
       }
     }
   },
@@ -39,11 +39,11 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'Nintendo Demo',
-        description: 'Portfolio demo using React and NodeJS.'
+        description: 'E-commerce demo for my portfolio, developed with React and NodeJS.'
       },
       pt: {
         name: 'Nintendo Demo',
-        description: 'Demonstração de portfólio com React e NodeJS.'
+        description: 'Demonstração para o portfólio, desenvolvida com React e NodeJS.'
       }
     }
   },
@@ -56,11 +56,11 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'Landing Page Eixo Platina',
-        description: 'Landing page for a real estate launch.'
+        description: 'Developed a Landing page for a real estate launch in React.'
       },
       pt: {
         name: 'Landing Page Eixo Platina',
-        description: 'Landing page para lançamento imobiliário.'
+        description: 'Landing page para lançamento imobiliário em React.'
       }
     }
   },
@@ -73,11 +73,11 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'DashBoard Demo',
-        description: 'Task dashboard demo for portfolio.'
+        description: 'Task dashboard demo for portfolio, developed using AngularJS.'
       },
       pt: {
         name: 'DashBoard Demo',
-        description: 'Demonstração de painel de tarefas para o portfólio.'
+        description: 'Demonstração de painel de tarefas para o portfólio, desenvolvido com AngularJS.'
       }
     }
   },
@@ -90,11 +90,11 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'SampaRural',
-        description: 'Complete development of the site with page creation, API integrations and dynamic forms.'
+        description: 'Developed the website from scratch, creating pages, features, API integrations and dynamic forms.'
       },
       pt: {
         name: 'SampaRural',
-        description: 'Desenvolvimento completo do site com criação de páginas, integrações de API e formulários dinâmicos.'
+        description: 'Desenvolvimento completo do site com criação de páginas, funcionalidades, integrações de API e formulários dinâmicos.'
       }
     }
   },
@@ -107,11 +107,11 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'Na Pista',
-        description: 'Analytics, layout adjustments, bug fixes and API integrations.'
+        description: 'Developed new features and did the maintenance of the webiste, fixed bugs and implemented analytics.'
       },
       pt: {
         name: 'Na Pista',
-        description: 'Analytics, ajustes de layout, correção de bugs e integração com API.'
+        description: 'Desenvolvi novas funcionalidades, fiz a manutenção do site, corrigi bugs e implementei o analytics.'
       }
     }
   },
@@ -124,11 +124,11 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'Alamanda',
-        description: 'E-commerce with admin panel, designed and developed from scratch.'
+        description: 'E-commerce with admin panel, designed and developed from scratch. Did both the Front-End and the Back-End.'
       },
       pt: {
         name: 'Alamanda',
-        description: 'E-commerce com painel administrativo, desenhado e desenvolvido do zero.'
+        description: 'E-commerce com painel administrativo, desenhado e desenvolvido do zero. Fiz tanto o Front-End quanto o Back-End'
       }
     }
   },
@@ -141,11 +141,11 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'Omint',
-        description: 'Custom page creation, layout adjustments and PHP integration in WordPress.'
+        description: 'Create custom pages, edited the Wordpress theme with PHP, and did the maintenance.'
       },
       pt: {
         name: 'Omint',
-        description: 'Criação de páginas customizadas, ajustes de layout e integração em PHP no WordPress.'
+        description: 'Criei páginas customizadas, editei o tema do Wordpress com PHP e fiz a manutenção'
       }
     }
   },
@@ -175,11 +175,11 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'Diário do Clima',
-        description: 'Full site creation with API integrations and setup of Webpack, ESLint and unit tests.'
+        description: 'Full site creation with API integrations, best practices setup, and automated tests.'
       },
       pt: {
         name: 'Diário do Clima',
-        description: 'Criação completa do site com integração de APIs e configuração de Webpack, ESLint e testes unitários.'
+        description: 'Criação completa do site com integração de APIs, configuração de boas práticas e testes automáticos.'
       }
     }
   },
@@ -192,11 +192,11 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'Querido Diário',
-        description: 'Developed the "Education" section, with pages and API integrations.'
+        description: 'Developed new pages, with new features and API integrations.'
       },
       pt: {
         name: 'Querido Diário',
-        description: 'Desenvolvi a seção de "Educação", com páginas e integrações de API.'
+        description: 'Desenvolvi novas páginas, com novas features e integrações de API.'
       }
     }
   },
@@ -209,11 +209,11 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'Jurema Institutional',
-        description: 'Developed the "Education" section, with pages and API integrations.'
+        description: 'Developed the complete website, with API integrations and translations.'
       },
       pt: {
         name: 'Jurema Institucional',
-        description: 'Desenvolvi a seção de "Educação", com páginas e integrações de API.'
+        description: 'Desenvolvi o site completo, com integração de api e tranduções.'
       }
     }
   },
@@ -226,11 +226,11 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'Emccamp',
-        description: 'Maintenance, bug fixes and new page creation in WordPress.'
+        description: 'Maintenance, bug fixes and new page creation in WordPress with PHP.'
       },
       pt: {
         name: 'Emccamp',
-        description: 'Manutenção, correções e criação de novas páginas em WordPress.'
+        description: 'Manutenção, correções de bugs e criação de novas páginas em WordPress com PHP.'
       }
     }
   },
@@ -243,11 +243,11 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'Banco BV',
-        description: 'Developed Angular pages to present products for Banco Votorantim.'
+        description: 'Developed pages to present the products for a Health Insurance Company.'
       },
       pt: {
         name: 'Banco BV',
-        description: 'Desenvolvimento de páginas em Angular para apresentação de produtos do Banco Votorantim.'
+        description: 'Desenvolvimento de páginas para apresentação de produtos do Banco Votorantim.'
       }
     }
   }
@@ -256,7 +256,7 @@ export const devProjects: Project[] = [
 export const designProjects: Project[] = [
   {
     id: 1,
-    technology: 'Photoshop',
+    technology: 'Photoshop, AdobeXD',
     year: 2020,
     url: 'https://xd.adobe.com/view/2168ae57-7722-4175-7187-32285ced0798-5759/',
     image: '/images/project-lejour.jpg',
