@@ -1,0 +1,8 @@
+.contact-container {
+  box-shadow: 18px 16px 0px 7px var(--textColor);
+
+  @media screen and (max-width: 800px) {
+    box-shadow: 12px 12px 0px 5px var(--textColor);
+
+  }
+}

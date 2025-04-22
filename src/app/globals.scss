@@ -1,0 +1,245 @@
+@use "sass:map";
+@use "tailwindcss";
+
+@font-face {
+  font-family: LemonMilk;
+  src: url('/fonts/LemonMilk.otf');
+}
+
+@font-face {
+  font-family: Magofah;
+  src: url('/fonts/Magofah.ttf');
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+$themes: (
+  light: (
+    textColor: black,
+    primary: #e8f0f2,
+    primarySoft: #e0e0e0,
+    secondary: #35524a,
+    tertiary: #f4a261,
+    textContrastColor: #f6efdd,
+    quaternary: black,
+    borderColor: black,
+  ),
+  dark: (
+    textColor: #f0e7d5,
+    primary: #1d1d1d,
+    primarySoft: #2b2b2b,
+    secondary: #2d3a38,
+    tertiary: #e6471f,
+    textContrastColor: #f6efdd,
+    quaternary: #d6e3e3,
+    borderColor: #f6efdd,
+  )
+);
+
+
+@mixin apply-theme($theme-name) {
+  $theme-list: map.get($themes, $theme-name);
+
+  @each $key, $value in $theme-list {
+    --#{$key}: #{$value};
+  }
+
+  @each $key, $value in $theme-list {
+    .bg-#{$key} {
+      background-color: #{$value};
+    }
+    .text-#{$key} {
+      color: #{$value};
+    }
+
+    .border-#{$key} {
+      border-color: #{$value};
+    }
+  }
+}
+
+html[data-theme='light'] {
+  @include apply-theme(light);
+}
+
+html[data-theme='dark'] {
+  @include apply-theme(dark);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  width: 100vw;
+}
+
+body {
+  color: var(--contrastColor);
+  background: var(--primary);
+  transition: 0.3s;
+  font-family: LemonMilk;
+  letter-spacing: 1.4px;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// stylized scroll
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+// Custom animations
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s;
+}
+
+.fade-in-long {
+  animation: fadeIn 1s;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  0% {
+    transform: translateY(0px);
+  }
+}
+
+.floating {
+  animation: floating 3s infinite;
+}
+
+
+//Custom CSS
+.font-secondary {
+  font-family: Magofah;
+  letter-spacing: 2.5px;
+}
+
+.w-full-container {
+  width: 100%;
+  padding: 60px 8%;
+
+  @media screen and (max-width: 800px) {
+    padding: 30px 5%;
+  }
+}
+
+.with-texture {
+  &::before {
+    position: absolute;
+    content: '';
+    background-image: url('/images/texture.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    opacity: 0.08;
+  }
+}
+
+.dark * .with-texture {
+  
+  &::before {
+    opacity: 0.05;
+  }
+}
+
+.arrow-down, .arrow-left, .arrow-right {
+  width: 60px;
+  height: 30px;
+  background-color: var(--textColor);
+  position: absolute;
+  top: calc(100% - 15px);
+  border-radius: 10px;
+  left: calc(50% - 30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+
+  .arrow {
+    border: solid var(--primary);
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-bottom: 5px;
+  }
+}
+
+.arrow-right, .arrow-left {
+  right: -40px;
+  left: unset;
+  top: calc(50%);
+  width: 30px;
+  border-radius: 50%;
+
+  .arrow {
+    margin-bottom: 0;
+    margin-right: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+
+}
+
+.arrow-left {
+  left: -40px;
+  right: unset;
+
+  .arrow {
+    margin-right: 0;
+    margin-left: 3px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

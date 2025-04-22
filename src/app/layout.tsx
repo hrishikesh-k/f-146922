@@ -1,0 +1,40 @@
+import { routing } from '@/i18n/routing';
+import { hasLocale, NextIntlClientProvider } from 'next-intl';
+import nextIntlConfig from '../../next-intl.config'
+import { headers } from 'next/headers';
+import './globals.scss';
+import Header from '@/components/Shared/PageStructure/Header';
+import Footer from '@/components/Shared/PageStructure/Footer';
+
+async function getThemeFromHeaders() {
+  const headersList = headers();
+  const theme = (await headersList).get('x-theme');
+  return theme === 'dark' ? 'dark' : 'light';
+}
+
+export default async function LocaleLayout({
+  children,
+  params
+}: {
+  children: React.ReactNode;
+  params: Promise<{locale: string}>;
+}) {
+  const theme = await getThemeFromHeaders();
+  const {locale} = await params;
+  let newLocale = nextIntlConfig.defaultLocale;
+  if (hasLocale(routing.locales, locale)) {
+    newLocale = locale;
+  }
+
+  return (
+    <html lang={newLocale} data-theme={theme} className={theme}>
+      <body className='bg-primary'>
+        <NextIntlClientProvider>
+          <Header />
+          {children}
+          <Footer />
+        </NextIntlClientProvider >
+      </body>
+    </html>
+  );
+}
