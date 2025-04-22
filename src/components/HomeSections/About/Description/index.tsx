@@ -21,7 +21,7 @@ export default function Description () {
         {t('softSkillsDescription')}
       </div>
       <div className="mt-6 mb-8 md:mb-0">
-      <Link target="_blank" href='https://drive.google.com/file/d/1JrK3329h7odu9VJc7GdxIxsIrXxFskmY' >
+      <Link target="_blank" href='https://drive.google.com/file/d/1kgfV7KCPlHAnBc7GBSZYPbTMsIb2gH7l' >
         <div className="
           text-textContrastColor 
           hover:scale-105 
