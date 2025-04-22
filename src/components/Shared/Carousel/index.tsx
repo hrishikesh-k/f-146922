@@ -6,7 +6,7 @@ export default function Carousel({ children }: { children: ReactNode[]}) {
   const scrollableContainerRef = useRef<HTMLDivElement | null>(null);
   const timeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [width, setWidth] = useState(1000);
-  const [height, setHeight] = useState(0);
+  const [height, setHeight] = useState(550);
   const [currentScroll, setCurrentScroll] = useState(0);
   const [scrolledPercent, setScrolledPercent] = useState(0);
   const [isRendered, setIsRendered] = useState(false);
