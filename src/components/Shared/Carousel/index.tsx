@@ -59,10 +59,11 @@ export default function Carousel({ children }: { children: ReactNode[]}) {
   const onClickLeft = () => {
     setCurrentScroll(currentScroll - 400);
   }
+
   return (
     <div className="relative">
       <button onClick={onClickLeft} disabled={currentScroll <= 0} className="arrow-left cursor-pointer hover:opacity-80 transition hover:scale-105"><div className="arrow"></div></button>
-      <div ref={scrollableContainerRef} style={{height: `${height}px`}} onScroll={onScroll} className="overflow-x-auto overflow-y-hidden">
+      <div ref={scrollableContainerRef} style={{height: `${height +15}px`}} onScroll={onScroll} className="overflow-x-auto overflow-y-hidden">
         {!isRendered && 
           <div className="flex content-center h-100 justify-center flex-wrap w-full">
             <Loader/>
