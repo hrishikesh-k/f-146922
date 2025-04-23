@@ -1,6 +1,7 @@
-import { HandlerEvent } from '@netlify/functions';
+import type { HandlerEvent } from '@netlify/functions';
 
-import { experiences, WorkExperience } from './mocks/experiences';
+import type { WorkExperience } from './mocks/experiences';
+import { experiences } from './mocks/experiences';
 
 exports.handler = async function (event: HandlerEvent) {
   const acceptLanguage = event.headers['accept-language'];

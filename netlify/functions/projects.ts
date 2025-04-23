@@ -1,6 +1,7 @@
 import type { HandlerEvent } from '@netlify/functions';
 
-import { designProjects, devProjects, intranetProjects, Project } from './mocks/projectLists';
+import type { Project } from './mocks/projectLists';
+import { designProjects, devProjects, intranetProjects } from './mocks/projectLists';
 
 exports.handler = async function (event: HandlerEvent) {
   const path = event.path;

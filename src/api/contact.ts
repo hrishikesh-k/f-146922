@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { ContactForm } from '@/models/contactModel';
+import type { ContactForm } from '@/models/contactModel';
 
 import api from './api';
 

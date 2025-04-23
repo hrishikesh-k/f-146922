@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
-import { type Project } from '@/models/projectModel';
+import { type ProjectModel } from '@/models/projectModel';
 
-export default function Intranet({ project }: { project: Project }) {
+export default function Intranet({ project }: { project: ProjectModel }) {
   return (
     <div className="p-1 md:p-4 box-border w-1/2 md:w-70">
       <div className="w-full h-full border-borderColor bg-primary border-4">

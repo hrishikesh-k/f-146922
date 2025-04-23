@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { EducationResponse } from '@/models/educationModel';
+import type { EducationResponse } from '@/models/educationModel';
 
 import api from './api';
 

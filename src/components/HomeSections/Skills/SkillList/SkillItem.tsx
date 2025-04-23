@@ -1,4 +1,4 @@
-import { Skill } from '@/models/skillModel';
+import type { Skill } from '@/models/skillModel';
 
 interface Props {
   skill: Skill;

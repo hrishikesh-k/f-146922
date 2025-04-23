@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { WorkExperience } from '@/models/experienceModel';
+import type { WorkExperience } from '@/models/experienceModel';
 
 import api from './api';
 

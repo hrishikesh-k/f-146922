@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { SkillsResponse } from '@/models/skillModel';
+import type { SkillsResponse } from '@/models/skillModel';
 
 import api from './api';
 

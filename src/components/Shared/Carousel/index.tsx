@@ -1,4 +1,5 @@
-import { ReactNode, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import type { ReactNode } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import React from 'react';
 
 import Loader from '../Loader';
