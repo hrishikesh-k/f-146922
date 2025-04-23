@@ -48,7 +48,7 @@ export default function ContactForm() {
           value={form.name}
           onChange={handleChange}
           required
-          className="w-full px-4 py-2 bg-white text-black border-4 border-textColor focus:outline-none focus:ring-2 focus:ring-orange-400"
+          className="w-full px-4 py-2 bg-primary text-textColor border-4 border-textColor focus:outline-none focus:ring-2 focus:ring-orange-400"
         />
       </div>
 
@@ -62,7 +62,7 @@ export default function ContactForm() {
           value={form.email}
           onChange={handleChange}
           required
-          className="w-full px-4 py-2 bg-white text-black border-4 border-textColor focus:outline-none focus:ring-2 focus:ring-orange-400"
+          className="w-full px-4 py-2 bg-primary text-textColor border-4 border-textColor focus:outline-none focus:ring-2 focus:ring-orange-400"
         />
       </div>
 
@@ -75,7 +75,7 @@ export default function ContactForm() {
           name="subject"
           value={form.subject}
           onChange={handleChange}
-          className="w-full px-4 py-2 bg-white text-black border-4 border-textColor focus:outline-none focus:ring-2 focus:ring-orange-400"
+          className="w-full px-4 py-2 bg-primary text-textColor border-4 border-textColor focus:outline-none focus:ring-2 focus:ring-orange-400"
         />
       </div>
 
@@ -89,7 +89,7 @@ export default function ContactForm() {
           value={form.message}
           onChange={handleChange}
           required
-          className="w-full px-4 py-2 bg-white text-black border-4 border-textColor focus:outline-none focus:ring-2 focus:ring-orange-400"
+          className="w-full px-4 py-2 bg-primary text-textColor border-4 border-textColor focus:outline-none focus:ring-2 focus:ring-orange-400"
         />
       </div>
 
@@ -113,7 +113,7 @@ export default function ContactForm() {
         </div>
       )}
       {response && (
-        <div className="bg-green-800 dark:bg-green-400 text-center text-primary p-5">
+        <div className="bg-green-800 dark:bg-green-400  text-center text-primary p-5">
           {t('contactSuccess')}
         </div>
       )}
