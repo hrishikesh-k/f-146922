@@ -1,4 +1,4 @@
-export interface Project {
+export interface ProjectModel {
   year: number;
   url?: string;
   technology: string;

@@ -1,13 +1,14 @@
-import { useState } from "react";
-import api from "./api";
-import { ContactForm } from "@/models/contactModel";
+import { useState } from 'react';
 
-export function usePostContact () {
+import { ContactForm } from '@/models/contactModel';
+
+import api from './api';
+
+export function usePostContact() {
   const [response, setResponse] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<boolean>(false);
 
-  
   const onMutate = async (messageBody: ContactForm, onSuccess: () => void) => {
     try {
       setResponse(null);
@@ -32,6 +33,6 @@ export function usePostContact () {
     onMutate,
     response,
     loading,
-    error
-  }
-};
+    error,
+  };
+}

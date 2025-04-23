@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
-import api from "./api";
-import { EducationResponse } from "@/models/educationModel";
+import { useEffect, useState } from 'react';
 
+import { EducationResponse } from '@/models/educationModel';
 
-export function useFetchEducations () {
+import api from './api';
+
+export function useFetchEducations() {
   const [data, setData] = useState<EducationResponse>({} as EducationResponse);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<boolean>(false);
@@ -25,6 +26,6 @@ export function useFetchEducations () {
   return {
     data,
     loading,
-    error
-  }
-};
+    error,
+  };
+}

@@ -1,10 +1,14 @@
-import { routing } from '@/i18n/routing';
-import { hasLocale, NextIntlClientProvider } from 'next-intl';
-import nextIntlConfig from '../../next-intl.config'
 import { headers } from 'next/headers';
-import './globals.scss';
-import Header from '@/components/Shared/PageStructure/Header';
+import { hasLocale, NextIntlClientProvider } from 'next-intl';
+import React from 'react';
+
 import Footer from '@/components/Shared/PageStructure/Footer';
+import Header from '@/components/Shared/PageStructure/Header';
+import { routing } from '@/i18n/routing';
+
+import nextIntlConfig from '../../next-intl.config';
+
+import './globals.scss';
 
 async function getThemeFromHeaders() {
   const headersList = headers();
@@ -14,13 +18,13 @@ async function getThemeFromHeaders() {
 
 export default async function LocaleLayout({
   children,
-  params
+  params,
 }: {
   children: React.ReactNode;
-  params: Promise<{locale: string}>;
+  params: Promise<{ locale: string }>;
 }) {
   const theme = await getThemeFromHeaders();
-  const {locale} = await params;
+  const { locale } = await params;
   let newLocale = nextIntlConfig.defaultLocale;
   if (hasLocale(routing.locales, locale)) {
     newLocale = locale;
@@ -28,12 +32,12 @@ export default async function LocaleLayout({
 
   return (
     <html lang={newLocale} data-theme={theme} className={theme}>
-      <body className='bg-primary'>
+      <body className="bg-primary">
         <NextIntlClientProvider>
           <Header />
           {children}
           <Footer />
-        </NextIntlClientProvider >
+        </NextIntlClientProvider>
       </body>
     </html>
   );

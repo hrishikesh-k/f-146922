@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
-import api from "./api";
-import { SkillsResponse } from "@/models/skillModel";
+import { useEffect, useState } from 'react';
 
+import { SkillsResponse } from '@/models/skillModel';
 
-export function useFetchSkills () {
+import api from './api';
+
+export function useFetchSkills() {
   const [data, setData] = useState<SkillsResponse>({} as SkillsResponse);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<boolean>(false);
@@ -25,6 +26,6 @@ export function useFetchSkills () {
   return {
     data,
     loading,
-    error
-  }
-};
+    error,
+  };
+}

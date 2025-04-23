@@ -1,9 +1,11 @@
 'use client';
 
-import { usePostContact } from '@/api/contact';
-import Loader from '@/components/Shared/Loader';
+import React from 'react';
 import { useState } from 'react';
 import { useTranslations } from 'use-intl';
+
+import { usePostContact } from '@/api/contact';
+import Loader from '@/components/Shared/Loader';
 
 export default function ContactForm() {
   const t = useTranslations();
@@ -14,12 +16,7 @@ export default function ContactForm() {
     message: '',
   });
 
-  const {
-    error,
-    loading,
-    onMutate,
-    response,
-  } = usePostContact();
+  const { error, loading, onMutate, response } = usePostContact();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -32,7 +29,7 @@ export default function ContactForm() {
       subject: '',
       message: '',
     });
-  }
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -42,7 +39,9 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="relative mt-4 grid gap-6 w-full">
       <div>
-        <label htmlFor="name" className="block mb-1 text-textColor text-sm">{t('formName')}</label>
+        <label htmlFor="name" className="block mb-1 text-textColor text-sm">
+          {t('formName')}
+        </label>
         <input
           type="text"
           name="name"
@@ -54,7 +53,9 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="email" className="block mb-1 text-textColor text-sm">{t('formEmail')}</label>
+        <label htmlFor="email" className="block mb-1 text-textColor text-sm">
+          {t('formEmail')}
+        </label>
         <input
           type="email"
           name="email"
@@ -66,7 +67,9 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="subject" className="block mb-1 text-textColor text-sm">{t('formSubject')}</label>
+        <label htmlFor="subject" className="block mb-1 text-textColor text-sm">
+          {t('formSubject')}
+        </label>
         <input
           type="text"
           name="subject"
@@ -77,7 +80,9 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="message" className="block mb-1 text-textColor text-sm">{t('formMessage')}</label>
+        <label htmlFor="message" className="block mb-1 text-textColor text-sm">
+          {t('formMessage')}
+        </label>
         <textarea
           name="message"
           rows={5}
@@ -95,23 +100,23 @@ export default function ContactForm() {
       >
         {t('sendMessage')}
       </button>
-      {loading && 
-        <div className='flex flex-wrap content-center justify-center absolute t-0 l-0 w-full h-full dark:bg-[rgba(0,0,0,0.5)] bg-[rgba(0,0,0,0.1)]'>
+      {loading && (
+        <div className="flex flex-wrap content-center justify-center absolute t-0 l-0 w-full h-full dark:bg-[rgba(0,0,0,0.5)] bg-[rgba(0,0,0,0.1)]">
           <div>
             <Loader invert />
           </div>
         </div>
-      }
-      {error && 
+      )}
+      {error && (
         <div className="bg-red-800 dark:bg-red-400 text-center text-primary p-5">
           {t('contactError')}
         </div>
-      }
-      {response && 
+      )}
+      {response && (
         <div className="bg-green-800 dark:bg-green-400 text-center text-primary p-5">
           {t('contactSuccess')}
         </div>
-      }
+      )}
     </form>
   );
 }

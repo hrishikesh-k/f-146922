@@ -1,5 +1,5 @@
-import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
+import nodemailer from 'nodemailer';
 dotenv.config();
 
 interface EmailParams {
@@ -40,10 +40,10 @@ exports.handler = async (event: { body: string }) => {
     const { name, email, subject, message }: EmailParams = JSON.parse(event.body);
     const info = await sendEmail(
       {
-        name, 
-        email, 
-        subject: `Message from ${name} - ${subject}`, 
-        message:`From: ${name} (${email})\n\nMessage:\n\n${message}`
+        name,
+        email,
+        subject: `Message from ${name} - ${subject}`,
+        message: `From: ${name} (${email})\n\nMessage:\n\n${message}`,
       },
       process.env.CLIENT_ID,
     );

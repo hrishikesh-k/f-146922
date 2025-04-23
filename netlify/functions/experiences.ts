@@ -1,13 +1,14 @@
 import { HandlerEvent } from '@netlify/functions';
+
 import { experiences, WorkExperience } from './mocks/experiences';
 
 exports.handler = async function (event: HandlerEvent) {
   const acceptLanguage = event.headers['accept-language'];
   const convertToCorrectLanguage = (experiences: WorkExperience[]) => {
-    if(!acceptLanguage) {
+    if (!acceptLanguage) {
       return [];
     }
-    const newExperiences = experiences.map(experience => {
+    const newExperiences = experiences.map((experience) => {
       return {
         ...experience,
         title: experience.translations[acceptLanguage].title,
@@ -16,17 +17,16 @@ exports.handler = async function (event: HandlerEvent) {
         responsibilities: experience.translations[acceptLanguage].responsibilities,
         startDate: experience.translations[acceptLanguage].startDate,
         endDate: experience.translations[acceptLanguage].endDate,
-
-      }
+      };
     });
-    return JSON.stringify(newExperiences)
-  }
+    return JSON.stringify(newExperiences);
+  };
 
   return {
     statusCode: 200,
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
     body: convertToCorrectLanguage(experiences),
-    }
-}
+  };
+};

@@ -22,13 +22,15 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'AnytimeFitness',
-        description: 'Developed New features and did the maintenance collaborating with the design and product teams.'
+        description:
+          'Developed New features and did the maintenance collaborating with the design and product teams.',
       },
       pt: {
         name: 'AnytimeFitness',
-        description: 'Desenvolvi novas funcionalidades e fiz a manutenção, colaborando com os times de design e produto.'
-      }
-    }
+        description:
+          'Desenvolvi novas funcionalidades e fiz a manutenção, colaborando com os times de design e produto.',
+      },
+    },
   },
   {
     id: 2,
@@ -39,13 +41,13 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'Nintendo Demo',
-        description: 'E-commerce demo for my portfolio, developed with React and NodeJS.'
+        description: 'E-commerce demo for my portfolio, developed with React and NodeJS.',
       },
       pt: {
         name: 'Nintendo Demo',
-        description: 'Demonstração para o portfólio, desenvolvida com React e NodeJS.'
-      }
-    }
+        description: 'Demonstração para o portfólio, desenvolvida com React e NodeJS.',
+      },
+    },
   },
   {
     id: 3,
@@ -56,13 +58,13 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'Landing Page Eixo Platina',
-        description: 'Developed a Landing page for a real estate launch in React.'
+        description: 'Developed a Landing page for a real estate launch in React.',
       },
       pt: {
         name: 'Landing Page Eixo Platina',
-        description: 'Landing page para lançamento imobiliário em React.'
-      }
-    }
+        description: 'Landing page para lançamento imobiliário em React.',
+      },
+    },
   },
   {
     id: 4,
@@ -73,13 +75,14 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'DashBoard Demo',
-        description: 'Task dashboard demo for portfolio, developed using AngularJS.'
+        description: 'Task dashboard demo for portfolio, developed using AngularJS.',
       },
       pt: {
         name: 'DashBoard Demo',
-        description: 'Demonstração de painel de tarefas para o portfólio, desenvolvido com AngularJS.'
-      }
-    }
+        description:
+          'Demonstração de painel de tarefas para o portfólio, desenvolvido com AngularJS.',
+      },
+    },
   },
   {
     id: 5,
@@ -90,13 +93,15 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'SampaRural',
-        description: 'Developed the website from scratch, creating pages, features, API integrations and dynamic forms.'
+        description:
+          'Developed the website from scratch, creating pages, features, API integrations and dynamic forms.',
       },
       pt: {
         name: 'SampaRural',
-        description: 'Desenvolvimento completo do site com criação de páginas, funcionalidades, integrações de API e formulários dinâmicos.'
-      }
-    }
+        description:
+          'Desenvolvimento completo do site com criação de páginas, funcionalidades, integrações de API e formulários dinâmicos.',
+      },
+    },
   },
   {
     id: 6,
@@ -107,13 +112,15 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'Na Pista',
-        description: 'Developed new features and did the maintenance of the webiste, fixed bugs and implemented analytics.'
+        description:
+          'Developed new features and did the maintenance of the webiste, fixed bugs and implemented analytics.',
       },
       pt: {
         name: 'Na Pista',
-        description: 'Desenvolvi novas funcionalidades, fiz a manutenção do site, corrigi bugs e implementei o analytics.'
-      }
-    }
+        description:
+          'Desenvolvi novas funcionalidades, fiz a manutenção do site, corrigi bugs e implementei o analytics.',
+      },
+    },
   },
   {
     id: 7,
@@ -124,13 +131,15 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'Alamanda',
-        description: 'E-commerce with admin panel, designed and developed from scratch. Did both the Front-End and the Back-End.'
+        description:
+          'E-commerce with admin panel, designed and developed from scratch. Did both the Front-End and the Back-End.',
       },
       pt: {
         name: 'Alamanda',
-        description: 'E-commerce com painel administrativo, desenhado e desenvolvido do zero. Fiz tanto o Front-End quanto o Back-End'
-      }
-    }
+        description:
+          'E-commerce com painel administrativo, desenhado e desenvolvido do zero. Fiz tanto o Front-End quanto o Back-End',
+      },
+    },
   },
   {
     id: 8,
@@ -141,13 +150,15 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'Omint',
-        description: 'Create custom pages, edited the Wordpress theme with PHP, and did the maintenance.'
+        description:
+          'Create custom pages, edited the Wordpress theme with PHP, and did the maintenance.',
       },
       pt: {
         name: 'Omint',
-        description: 'Criei páginas customizadas, editei o tema do Wordpress com PHP e fiz a manutenção'
-      }
-    }
+        description:
+          'Criei páginas customizadas, editei o tema do Wordpress com PHP e fiz a manutenção',
+      },
+    },
   },
   {
     id: 9,
@@ -158,13 +169,13 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'Luvieh Jewellery',
-        description: 'E-commerce customization and theme editing on Shopify.'
+        description: 'E-commerce customization and theme editing on Shopify.',
       },
       pt: {
         name: 'Luvieh Jewellery',
-        description: 'Customização e edição de tema em e-commerce na plataforma Shopify.'
-      }
-    }
+        description: 'Customização e edição de tema em e-commerce na plataforma Shopify.',
+      },
+    },
   },
   {
     id: 10,
@@ -175,13 +186,15 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'Diário do Clima',
-        description: 'Full site creation with API integrations, best practices setup, and automated tests.'
+        description:
+          'Full site creation with API integrations, best practices setup, and automated tests.',
       },
       pt: {
         name: 'Diário do Clima',
-        description: 'Criação completa do site com integração de APIs, configuração de boas práticas e testes automáticos.'
-      }
-    }
+        description:
+          'Criação completa do site com integração de APIs, configuração de boas práticas e testes automáticos.',
+      },
+    },
   },
   {
     id: 11,
@@ -192,13 +205,13 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'Querido Diário',
-        description: 'Developed new pages, with new features and API integrations.'
+        description: 'Developed new pages, with new features and API integrations.',
       },
       pt: {
         name: 'Querido Diário',
-        description: 'Desenvolvi novas páginas, com novas features e integrações de API.'
-      }
-    }
+        description: 'Desenvolvi novas páginas, com novas features e integrações de API.',
+      },
+    },
   },
   {
     id: 12,
@@ -209,13 +222,13 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'Jurema Institutional',
-        description: 'Developed the complete website, with API integrations and translations.'
+        description: 'Developed the complete website, with API integrations and translations.',
       },
       pt: {
         name: 'Jurema Institucional',
-        description: 'Desenvolvi o site completo, com integração de api e tranduções.'
-      }
-    }
+        description: 'Desenvolvi o site completo, com integração de api e tranduções.',
+      },
+    },
   },
   {
     id: 13,
@@ -226,13 +239,14 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'Emccamp',
-        description: 'Maintenance, bug fixes and new page creation in WordPress with PHP.'
+        description: 'Maintenance, bug fixes and new page creation in WordPress with PHP.',
       },
       pt: {
         name: 'Emccamp',
-        description: 'Manutenção, correções de bugs e criação de novas páginas em WordPress com PHP.'
-      }
-    }
+        description:
+          'Manutenção, correções de bugs e criação de novas páginas em WordPress com PHP.',
+      },
+    },
   },
   {
     id: 14,
@@ -243,14 +257,15 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'Banco BV',
-        description: 'Developed pages to present the products for a Health Insurance Company.'
+        description: 'Developed pages to present the products for a Health Insurance Company.',
       },
       pt: {
         name: 'Banco BV',
-        description: 'Desenvolvimento de páginas para apresentação de produtos do Banco Votorantim.'
-      }
-    }
-  }
+        description:
+          'Desenvolvimento de páginas para apresentação de produtos do Banco Votorantim.',
+      },
+    },
+  },
 ];
 
 export const designProjects: Project[] = [
@@ -263,7 +278,8 @@ export const designProjects: Project[] = [
     translations: {
       pt: {
         name: 'Le jour',
-        description: 'Protótipo de interface criado para uma competição na FIAP, durante minha graduação.',
+        description:
+          'Protótipo de interface criado para uma competição na FIAP, durante minha graduação.',
       },
       en: {
         name: 'Le jour',
@@ -280,7 +296,8 @@ export const designProjects: Project[] = [
     translations: {
       pt: {
         name: 'Redesign do site da Nintendo',
-        description: 'Conceito de redesign da loja da Nintendo, criado para aprimorar meu portfólio.',
+        description:
+          'Conceito de redesign da loja da Nintendo, criado para aprimorar meu portfólio.',
       },
       en: {
         name: 'Nintendo Website Redesign',

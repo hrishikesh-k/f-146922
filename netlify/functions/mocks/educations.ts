@@ -3,7 +3,7 @@ interface Translation {
   degree: string;
   startDate: string;
   endDate: string;
-};
+}
 
 export interface Education {
   id: number;
@@ -26,36 +26,36 @@ export const educationsList: Education[] = [
     id: 1,
     translations: {
       en: {
-        institution: "FIAP",
-        degree: "Bachelor’s in Systems Analysis and Development",
-        startDate: "2019",
-        endDate: "2023"
+        institution: 'FIAP',
+        degree: 'Bachelor’s in Systems Analysis and Development',
+        startDate: '2019',
+        endDate: '2023',
       },
       pt: {
-        institution: "FIAP",
-        degree: "Bacharelado em Análise e Desenvolvimento de Sistemas",
-        startDate: "2019",
-        endDate: "2023"
-      }
-    }
+        institution: 'FIAP',
+        degree: 'Bacharelado em Análise e Desenvolvimento de Sistemas',
+        startDate: '2019',
+        endDate: '2023',
+      },
+    },
   },
   {
     id: 2,
     translations: {
       en: {
-        institution: "ETEC Zona Leste",
-        degree: "Technical Degree in Systems Development",
-        startDate: "2015",
-        endDate: "2016"
+        institution: 'ETEC Zona Leste',
+        degree: 'Technical Degree in Systems Development',
+        startDate: '2015',
+        endDate: '2016',
       },
       pt: {
-        institution: "ETEC Zona Leste",
-        degree: "Técnico em Desenvolvimento de Sistemas",
-        startDate: "2015",
-        endDate: "2016"
-      }
-    }
-  }
+        institution: 'ETEC Zona Leste',
+        degree: 'Técnico em Desenvolvimento de Sistemas',
+        startDate: '2015',
+        endDate: '2016',
+      },
+    },
+  },
 ];
 
 export const certificationsList: Certification[] = [
@@ -63,30 +63,30 @@ export const certificationsList: Certification[] = [
     id: 1,
     translations: {
       en: {
-        course: "Angular, React & Node.js",
-        provider: "Alura",
-        year: "2021"
+        course: 'Angular, React & Node.js',
+        provider: 'Alura',
+        year: '2021',
       },
       pt: {
-        course: "Angular, React e Node.js",
-        provider: "Alura",
-        year: "2021"
-      }
-    }
+        course: 'Angular, React e Node.js',
+        provider: 'Alura',
+        year: '2021',
+      },
+    },
   },
   {
     id: 2,
     translations: {
       en: {
-        course: "Web Development",
-        provider: "Google Activate",
-        year: "2018"
+        course: 'Web Development',
+        provider: 'Google Activate',
+        year: '2018',
       },
       pt: {
-        course: "Desenvolvimento Web",
-        provider: "Google Activate",
-        year: "2018"
-      }
-    }
-  }
+        course: 'Desenvolvimento Web',
+        provider: 'Google Activate',
+        year: '2018',
+      },
+    },
+  },
 ];

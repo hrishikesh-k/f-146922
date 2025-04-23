@@ -1,9 +1,10 @@
-import { type Project } from "@/models/projectModel";
-import { useTranslations } from "next-intl";
-import Link from "next/link";
-import Image from "next/image";
+import Image from 'next/image';
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
-export default function Project ({project}: {project: Project}) {
+import { type ProjectModel } from '@/models/projectModel';
+
+export default function Project({ project }: { project: ProjectModel }) {
   const t = useTranslations();
   return (
     <div className="p-2 w-80 md:w-90 md:p-4 box-border">
@@ -16,16 +17,19 @@ export default function Project ({project}: {project: Project}) {
           </div>
           <div className="text-textColor px-2 py-1 text-[10px]">{project.year}</div>
         </div>
-        <Image className="w-full" width='320' height='150' src={project.image} alt={project.name} />
+        <Image className="w-full" width="320" height="150" src={project.image} alt={project.name} />
         <div className="p-4 text-textColor border-t-4 border-borderColor">
           <div className="overflow-auto h-30">
             <div className="text-sm pb-1 font-bold">{project.name}</div>
             <div className="text-[10px] pb-2 font-bold">{project.technology}</div>
-            <div className="text-[11px] text-justify opacity-80 dark:opacity-95">{project.description}</div>
+            <div className="text-[11px] text-justify opacity-80 dark:opacity-95">
+              {project.description}
+            </div>
           </div>
-          {project.url && 
-            <Link target="_blank" href={project.url} >
-              <div className="
+          {project.url && (
+            <Link target="_blank" href={project.url}>
+              <div
+                className="
                 text-textColor 
                 hover:scale-105 
                 hover:opacity-70 
@@ -37,13 +41,13 @@ export default function Project ({project}: {project: Project}) {
                 mt-5 
                 p-2 
                 bg-tertiary"
-                >
-                  {t('accessProject')}
-                </div>
+              >
+                {t('accessProject')}
+              </div>
             </Link>
-          } 
+          )}
         </div>
       </div>
     </div>
-  )
+  );
 }

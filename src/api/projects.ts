@@ -1,8 +1,10 @@
-import { Project } from "@/models/projectModel";
-import { useEffect, useState } from "react";
-import api from "./api";
+import { useEffect, useState } from 'react';
 
-export function useFetchProjects (type: 'main' | 'design' | 'intranet' = 'main') {
+import { Project } from '@/models/projectModel';
+
+import api from './api';
+
+export function useFetchProjects(type: 'main' | 'design' | 'intranet' = 'main') {
   const [data, setData] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<boolean>(false);
@@ -24,6 +26,6 @@ export function useFetchProjects (type: 'main' | 'design' | 'intranet' = 'main')
   return {
     data,
     loading,
-    error
-  }
-};
+    error,
+  };
+}

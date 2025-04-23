@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
-import api from "./api";
-import { WorkExperience } from "@/models/experienceModel";
+import { useEffect, useState } from 'react';
 
+import { WorkExperience } from '@/models/experienceModel';
 
-export function useFetchExperiences () {
+import api from './api';
+
+export function useFetchExperiences() {
   const [data, setData] = useState<WorkExperience[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<boolean>(false);
@@ -25,6 +26,6 @@ export function useFetchExperiences () {
   return {
     data,
     loading,
-    error
-  }
-};
+    error,
+  };
+}
