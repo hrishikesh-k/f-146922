@@ -1,25 +1,17 @@
-'use client'
-
-import { useState } from "react";
 import ThemeSelector from "../ThemeSelector";
 import LanguageSwitcher from "../LanguageSwitcher";
 import Link from "next/link";
 
-export default function MobileMenu() {
-  const [isMenuOpen, setMenuOpen] = useState(false);
+interface Props {
+  setMenuOpen: (value: boolean) => void;
+  isMenuOpen: boolean;
+  onClickLink: () => void;
+}
 
-  const onClickLink = () => {
-    setMenuOpen(false);
-  }
-
-  const onBlur = () => {
-    setTimeout(() => {
-      setMenuOpen(false);
-    }, 100);
-  }
+export default function MobileMenu({setMenuOpen, isMenuOpen, onClickLink}: Props) {
 
   return (
-    <div className="flex content-center h-full" onBlur={onBlur} onMouseLeave={() => setMenuOpen(false)}>
+    <div className="flex content-center h-full">
       <button onClick={() => setMenuOpen(true)} className="cursor-pointer hover:opacity-60 transition">
         <div className="bg-textColor w-8 h-1"></div>
         <div className="bg-textColor w-8 h-1 mt-1"></div>
