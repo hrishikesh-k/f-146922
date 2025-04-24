@@ -32,19 +32,20 @@ export default function Description() {
         >
           <div
             className="
-          text-textContrastColor 
-          hover:scale-105 
-          hover:opacity-70 
-          transition
-          border-borderColor
-          border-4
-          px-3
-          py-2
-          w-80
-          flex
-          content-center
-          justify-center
-          bg-secondary"
+              text-textContrastColor 
+              hover:scale-105 
+              hover:opacity-70 
+              transition
+              border-borderColor
+              border-4
+              px-3
+              py-2
+              md:w-80
+              w-full
+              flex
+              content-center
+              justify-center
+              bg-secondary"
           >
             <span className="pr-2">
               <Image width="20" height="20" src="/images/download.png" alt="download icon" />

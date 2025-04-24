@@ -15,7 +15,7 @@ export default function Skills() {
   return (
     <div className="text-textColor relative border-b-4 border-borderColor">
       <div className="font-secondary px-[8%] pb-5 pt-[50px] text-2xl md:text-4xl">
-        <div className="md:px-5">{t('technicalSkills')}</div>
+        <div className="md:px-5 md:text-left text-center">{t('technicalSkills')}</div>
       </div>
 
       {error && <div className="text-center p-10">{t('errorSkills')}</div>}
