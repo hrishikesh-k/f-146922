@@ -81,7 +81,7 @@ export default function Carousel({ children }: { children: ReactNode[] }) {
         ref={scrollableContainerRef}
         style={{ height: `${height + 15}px` }}
         onScroll={onScroll}
-        className="overflow-x-auto overflow-y-hidden"
+        className="overflow-x-auto overflow-y-hidden scroll-smooth"
       >
         {!isRendered && (
           <div className="flex content-center h-100 justify-center flex-wrap w-full">
