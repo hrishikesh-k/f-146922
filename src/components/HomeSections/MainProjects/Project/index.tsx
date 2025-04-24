@@ -8,7 +8,7 @@ export default function Project({ project }: { project: ProjectModel }) {
   const t = useTranslations();
   return (
     <div className="p-2 w-80 md:w-90 md:p-4 box-border">
-      <div className="w-full h-full border-borderColor bg-primary border-4 cursor-pointer hover:scale-102 transition">
+      <div className="w-full h-full border-borderColor bg-primary border-4">
         <div className="flex justify-between border-black border-b-4 content-center">
           <div className="p-2 flex gap-1">
             <div className="w-2 h-2 bg-quaternary border-quaternary border-1 rounded-full"></div>
