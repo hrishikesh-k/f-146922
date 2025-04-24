@@ -152,11 +152,20 @@ body {
 
 .w-full-container {
   width: 100%;
-  padding: 60px 8%;
+  padding: 30px 5%;
 
-  @media screen and (max-width: 800px) {
-    padding: 30px 5%;
+  @media screen and (min-width: 800px) {
+    padding: 60px 8%;
   }
+}
+
+.gradient-right {
+  background: linear-gradient(90deg,rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.8) 100%);
+  transition: 0.4s;
+}
+.gradient-left {
+  background: linear-gradient(90deg,rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%);
+  transition: 0.4s;
 }
 
 .with-texture {
@@ -213,6 +222,7 @@ body {
   top: calc(50%);
   width: 30px;
   border-radius: 50%;
+  display: none;
 
   .arrow {
     margin-bottom: 0;
@@ -221,8 +231,8 @@ body {
     -webkit-transform: rotate(-45deg);
   }
 
-  @media screen and (max-width: 800px) {
-    display: none;
+  @media screen and (min-width: 800px) {
+    display: block;
   }
 
 }

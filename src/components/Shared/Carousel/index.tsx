@@ -63,15 +63,20 @@ export default function Carousel({ children }: { children: ReactNode[] }) {
     setCurrentScroll(currentScroll - 400);
   };
 
+  const disabledLeft = currentScroll <= 0;
+  const disabledRight = scrolledPercent === 100;
   return (
     <div className="relative">
       <button
         onClick={onClickLeft}
-        disabled={currentScroll <= 0}
+        disabled={disabledLeft}
         className="arrow-left cursor-pointer hover:opacity-80 transition hover:scale-105"
       >
         <div className="arrow"></div>
       </button>
+      {!disabledLeft && (
+        <div className="h-[420px] bg-black gradient-left w-5 top-[3%] left-0 absolute"></div>
+      )}
       <div
         ref={scrollableContainerRef}
         style={{ height: `${height + 15}px` }}
@@ -91,9 +96,12 @@ export default function Carousel({ children }: { children: ReactNode[] }) {
           {children}
         </div>
       </div>
+      {!disabledRight && (
+        <div className="h-[420px] bg-black gradient-right w-5 top-[3%] right-0 absolute"></div>
+      )}
       <button
         onClick={onClickRight}
-        disabled={scrolledPercent === 100}
+        disabled={disabledRight}
         className="arrow-right cursor-pointer hover:opacity-80 transition hover:scale-105"
       >
         <div className="arrow"></div>
