@@ -79,7 +79,7 @@ export default function Carousel({ children, onRendered }: Props) {
       </button>
       <div
         style={{ height: `${height}px` }}
-        className={`transition bg-black gradient-left w-5 left-0 absolute ${disabledLeft ? 'opacity-0' : 'opacity-1'}`}
+        className={`transition bg-black gradient-left w-5 left-0 absolute ${disabledLeft ? 'opacity-0' : 'opacity-100'}`}
       ></div>
       <div
         ref={scrollableContainerRef}
@@ -97,7 +97,7 @@ export default function Carousel({ children, onRendered }: Props) {
       </div>
       <div
         style={{ height: `${height}px`, top: `calc(50% - ${height / 2}px)` }}
-        className={`transition bg-black gradient-right w-5 right-0 absolute ${disabledRight ? 'opacity-0' : 'opacity-1'}`}
+        className={`transition bg-black gradient-right w-5 right-0 absolute ${disabledRight ? 'opacity-0' : 'opacity-100'}`}
       ></div>
       <button
         onClick={onClickRight}
