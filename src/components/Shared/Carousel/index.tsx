@@ -25,9 +25,9 @@ export default function Carousel({ children }: { children: ReactNode[] }) {
       }, 0);
       setWidth(totalWidth);
 
-      if (container.children[0]) {
-        const childStyle = getComputedStyle(container.children[0]);
-        setHeight(container.children[0].clientHeight + (parseFloat(childStyle.padding) || 0) * 2);
+      if (container.children[1]) {
+        const childStyle = getComputedStyle(container.children[1]);
+        setHeight(container.children[1].clientHeight + (parseFloat(childStyle.padding) || 0) * 2);
       }
 
       setIsRendered(true);
