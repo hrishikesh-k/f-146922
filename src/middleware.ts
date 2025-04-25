@@ -13,9 +13,7 @@ export function middleware(request: NextRequest) {
   if (initialTheme === 'dark') {
     theme = 'dark';
   }
-  document.documentElement.classList.remove('light');
-  document.documentElement.classList.remove('dark');
-  document.documentElement.classList.add(theme);
+
   response.headers.set('x-theme', theme);
 
   return response;
