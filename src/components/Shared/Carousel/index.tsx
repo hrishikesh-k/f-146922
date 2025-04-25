@@ -2,20 +2,17 @@ import type { ReactNode } from 'react';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import React from 'react';
 
-interface Props {
-  children: ReactNode[];
-  onRendered: () => void;
-}
+import Loader from '../Loader';
 
-export default function Carousel({ children, onRendered }: Props) {
+export default function Carousel({ children }: { children: ReactNode[] }) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const scrollableContainerRef = useRef<HTMLDivElement | null>(null);
-  const isRendered = useRef(false);
   const timeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [width, setWidth] = useState(1000);
   const [height, setHeight] = useState(550);
   const [currentScroll, setCurrentScroll] = useState(0);
   const [scrolledPercent, setScrolledPercent] = useState(0);
+  const [isRendered, setIsRendered] = useState(false);
 
   useLayoutEffect(() => {
     setTimeout(() => {
@@ -29,13 +26,13 @@ export default function Carousel({ children, onRendered }: Props) {
       setWidth(totalWidth);
 
       if (container.children[1]) {
-        setHeight(container.children[1].clientHeight);
+        const childStyle = getComputedStyle(container.children[1]);
+        setHeight(container.children[1].clientHeight + (parseFloat(childStyle.padding) || 0) * 2);
       }
 
-      isRendered.current = true;
-      onRendered();
-    }, 20);
-  }, [children, onRendered]);
+      setIsRendered(true);
+    }, 200);
+  }, [children]);
 
   useEffect(() => {
     if (scrollableContainerRef.current) {
@@ -69,7 +66,7 @@ export default function Carousel({ children, onRendered }: Props) {
   const disabledLeft = currentScroll <= 0;
   const disabledRight = scrolledPercent === 100;
   return (
-    <div className="relative overflow-y-hidden z-1">
+    <div className="relative">
       <button
         onClick={onClickLeft}
         disabled={disabledLeft}
@@ -83,13 +80,18 @@ export default function Carousel({ children, onRendered }: Props) {
       ></div>
       <div
         ref={scrollableContainerRef}
-        style={{ height: `${height}px`, top: `calc(50% - ${height / 2}px)` }}
+        style={{ height: `${height + 15}px` }}
         onScroll={onScroll}
-        className="overflow-y-hidden scroll-smooth"
+        className="overflow-x-auto overflow-y-hidden scroll-smooth"
       >
+        {!isRendered && (
+          <div className="flex content-center h-100 justify-center flex-wrap w-full">
+            <Loader />
+          </div>
+        )}
         <div
           ref={containerRef}
-          className={`flex flex-wrap ${!isRendered.current && 'opacity-0'}`}
+          className={`flex flex-wrap py-2 ${!isRendered && 'opacity-0'}`}
           style={{ width: `${width}px` }}
         >
           {children}
