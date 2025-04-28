@@ -14,25 +14,39 @@ export default function Carousel({ children }: { children: ReactNode[] }) {
   const [scrolledPercent, setScrolledPercent] = useState(0);
   const [isRendered, setIsRendered] = useState(false);
 
+  const calcSize = () => {
+    const container = containerRef.current;
+    if (!container || !children.length) return;
+
+    const totalWidth = Array.from(container.children).reduce((acc, child) => {
+      const el = child as HTMLElement;
+      return acc + el.offsetWidth;
+    }, 0);
+    setWidth(totalWidth);
+
+    if (container.children[1]) {
+      const childStyle = getComputedStyle(container.children[1]);
+      setHeight(container.children[1].clientHeight + (parseFloat(childStyle.padding) || 0) * 2);
+    }
+  };
+
   useLayoutEffect(() => {
     setTimeout(() => {
-      const container = containerRef.current;
-      if (!container || !children.length) return;
-
-      const totalWidth = Array.from(container.children).reduce((acc, child) => {
-        const el = child as HTMLElement;
-        return acc + el.offsetWidth;
-      }, 0);
-      setWidth(totalWidth);
-
-      if (container.children[1]) {
-        const childStyle = getComputedStyle(container.children[1]);
-        setHeight(container.children[1].clientHeight + (parseFloat(childStyle.padding) || 0) * 2);
-      }
-
+      calcSize();
       setIsRendered(true);
-    }, 200);
-  }, [children]);
+    }, 50);
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      calcSize();
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  });
 
   useEffect(() => {
     if (scrollableContainerRef.current) {
