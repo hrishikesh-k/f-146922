@@ -23,7 +23,7 @@ export const devProjects: Project[] = [
       en: {
         name: 'AnytimeFitness',
         description:
-          'Developed New features and did the maintenance collaborating with the design and product teams.',
+          'Developed the second version of the website and did the maintenance, collaborating with the design and product teams.',
       },
       pt: {
         name: 'AnytimeFitness',
@@ -94,7 +94,7 @@ export const devProjects: Project[] = [
       en: {
         name: 'SampaRural',
         description:
-          'Developed the website from scratch, creating pages, features, API integrations and dynamic forms.',
+          'Developed the website from scratch, creating pages, features, API integrations and a form generator.',
       },
       pt: {
         name: 'SampaRural',
@@ -132,7 +132,7 @@ export const devProjects: Project[] = [
       en: {
         name: 'Alamanda',
         description:
-          'E-commerce with admin panel, designed and developed from scratch. Did both the Front-End and the Back-End.',
+          'E-commerce with admin panel, client area and analytics, designed and developed from scratch [Front-End, Back-End and MySQL]',
       },
       pt: {
         name: 'Alamanda',
@@ -151,7 +151,7 @@ export const devProjects: Project[] = [
       en: {
         name: 'Omint',
         description:
-          'Create custom pages, edited the Wordpress theme with PHP, and did the maintenance.',
+          'Created custom pages, edited the Wordpress theme with PHP, and did the maintenance.',
       },
       pt: {
         name: 'Omint',
@@ -187,7 +187,7 @@ export const devProjects: Project[] = [
       en: {
         name: 'Diário do Clima',
         description:
-          'Full site creation with API integrations, best practices setup, and automated tests.',
+          'End to end website creation with API integrations, best practices setup, and automated tests.',
       },
       pt: {
         name: 'Diário do Clima',
@@ -222,7 +222,8 @@ export const devProjects: Project[] = [
     translations: {
       en: {
         name: 'Jurema Institutional',
-        description: 'Developed the complete website, with API integrations and translations.',
+        description:
+          'Developed the complete website, with API integrations, translations and dynamic components.',
       },
       pt: {
         name: 'Jurema Institucional',
