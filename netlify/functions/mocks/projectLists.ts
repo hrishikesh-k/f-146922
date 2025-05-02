@@ -132,7 +132,7 @@ export const devProjects: Project[] = [
       en: {
         name: 'Alamanda',
         description:
-          'E-commerce with admin panel, client area and analytics, designed and developed from scratch [Front-End, Back-End and MySQL]',
+          'E-commerce with admin panel, client area and analytics, designed and developed from scratch [Front-End, Back-End and MySQL].',
       },
       pt: {
         name: 'Alamanda',
