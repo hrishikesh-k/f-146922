@@ -11,7 +11,6 @@ const Portfolio = () => {
       <div id="main-projects-section">
         <MainProjects />
       </div>
-
     </>
   );
 };
