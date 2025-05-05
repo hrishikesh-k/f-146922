@@ -1,20 +1,6 @@
-'use client';
-
 import dynamic from 'next/dynamic';
-
-import Loader from '@/components/Shared/Loader';
-const About = dynamic(() => import('@/components/HomeSections/About'), {
-  ssr: false,
-  loading: () => <Loader />,
-});
-const Contact = dynamic(() => import('@/components/HomeSections/Contact'), { ssr: false });
-const Designs = dynamic(() => import('@/components/HomeSections/Designs'), { ssr: false });
-const Experience = dynamic(() => import('@/components/HomeSections/Experience'), { ssr: false });
-const Intranets = dynamic(() => import('@/components/HomeSections/Intranets'), { ssr: false });
-const MainProjects = dynamic(() => import('@/components/HomeSections/MainProjects'), {
-  ssr: false,
-});
-const Skills = dynamic(() => import('@/components/HomeSections/Skills'), { ssr: false });
+const About = dynamic(() => import('@/components/HomeSections/About'));
+const MainProjects = dynamic(() => import('@/components/HomeSections/MainProjects'));
 
 const Portfolio = () => {
   return (
@@ -25,21 +11,7 @@ const Portfolio = () => {
       <div id="main-projects-section">
         <MainProjects />
       </div>
-      <div id="intranets-section">
-        <Intranets />
-      </div>
-      <div id="skills-section">
-        <Skills />
-      </div>
-      <div id="experience-section">
-        <Experience />
-      </div>
-      <div id="design-section">
-        <Designs />
-      </div>
-      <div id="contact-section">
-        <Contact />
-      </div>
+
     </>
   );
 };
