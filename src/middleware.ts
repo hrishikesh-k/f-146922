@@ -12,10 +12,5 @@ export function middleware(request: NextRequest) {
   const theme = themeCookie?.value === 'dark' ? 'dark' : 'light';
 
   response.headers.set('x-theme', theme);
-
-  console.log('Middleware log:');
-  console.log('> theme cookie:', themeCookie);
-  console.log('> header x-theme set to:', theme);
-
   return response;
 }
