@@ -8,6 +8,8 @@ const intlMiddleware = createMiddleware(routing);
 export function middleware(request: NextRequest) {
   const response = intlMiddleware(request);
 
+  console.log('test');
+  console.log(request.cookies.get('theme'));
   const initialTheme = request.cookies.get('theme')?.value;
   let theme = 'light';
   if (initialTheme === 'dark') {
@@ -18,7 +20,3 @@ export function middleware(request: NextRequest) {
 
   return response;
 }
-
-export const config = {
-  matcher: ['/((?!api|trpc|netlify|_next|_vercel|.*\\..*).*)'],
-};
