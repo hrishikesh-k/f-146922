@@ -1,7 +1,12 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-const About = dynamic(() => import('@/components/HomeSections/About'), { ssr: false });
+
+import Loader from '@/components/Shared/Loader';
+const About = dynamic(() => import('@/components/HomeSections/About'), {
+  ssr: false,
+  loading: () => <Loader />,
+});
 const Contact = dynamic(() => import('@/components/HomeSections/Contact'), { ssr: false });
 const Designs = dynamic(() => import('@/components/HomeSections/Designs'), { ssr: false });
 const Experience = dynamic(() => import('@/components/HomeSections/Experience'), { ssr: false });
