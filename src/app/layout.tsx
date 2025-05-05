@@ -32,7 +32,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={newLocale} data-theme={theme} className={theme}>
-      <body className="bg-primary">
+      <body className="bg-primary min-h-dvh">
         <NextIntlClientProvider>
           <Header />
           {children}
