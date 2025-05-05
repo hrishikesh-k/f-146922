@@ -8,15 +8,14 @@ const intlMiddleware = createMiddleware(routing);
 export function middleware(request: NextRequest) {
   const response = intlMiddleware(request);
 
-  console.log('test');
-  console.log(request.cookies.get('theme'));
-  const initialTheme = request.cookies.get('theme')?.value;
-  let theme = 'light';
-  if (initialTheme === 'dark') {
-    theme = 'dark';
-  }
+  const themeCookie = request.cookies.get('theme');
+  const theme = themeCookie?.value === 'dark' ? 'dark' : 'light';
 
   response.headers.set('x-theme', theme);
+
+  console.log('Middleware log:');
+  console.log('> theme cookie:', themeCookie);
+  console.log('> header x-theme set to:', theme);
 
   return response;
 }
