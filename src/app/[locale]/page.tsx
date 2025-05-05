@@ -1,5 +1,6 @@
-import ClientSideSections from '@/components/HomeSections/ClientSideSections/ClientSideSections';
 import dynamic from 'next/dynamic';
+
+import ClientSideSections from '@/components/HomeSections/ClientSideSections/ClientSideSections';
 const About = dynamic(() => import('@/components/HomeSections/About'));
 const MainProjects = dynamic(() => import('@/components/HomeSections/MainProjects'));
 

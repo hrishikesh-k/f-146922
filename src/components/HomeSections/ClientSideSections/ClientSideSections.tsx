@@ -7,7 +7,7 @@ const Experience = dynamic(() => import('@/components/HomeSections/Experience'),
 const Intranets = dynamic(() => import('@/components/HomeSections/Intranets'), { ssr: false });
 const Skills = dynamic(() => import('@/components/HomeSections/Skills'), { ssr: false });
 
-export default function ClinetSideSections() {
+export default function ClientSideSections() {
   return (
     <>
       <div id="intranets-section">
