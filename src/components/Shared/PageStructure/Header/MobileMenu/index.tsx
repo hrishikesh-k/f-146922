@@ -1,18 +1,20 @@
+'use client';
+
 import Link from 'next/link';
+import { useState } from 'react';
 
 import LanguageSwitcher from '../LanguageSwitcher';
 import ThemeSelector from '../ThemeSelector';
 
-interface Props {
-  // eslint-disable-next-line no-unused-vars
-  setMenuOpen: (_value: boolean) => void;
-  isMenuOpen: boolean;
-  onClickLink: () => void;
-}
-
-export default function MobileMenu({ setMenuOpen, isMenuOpen, onClickLink }: Props) {
+export default function MobileMenu() {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const onBlur = () => {
+    setTimeout(() => {
+      setMenuOpen(false);
+    }, 100);
+  };
   return (
-    <div className="flex content-center h-full">
+    <div onBlur={onBlur} onMouseLeave={onBlur} className="flex content-center h-full">
       <button
         onClick={() => setMenuOpen(true)}
         className="cursor-pointer hover:opacity-60 transition"
@@ -25,37 +27,37 @@ export default function MobileMenu({ setMenuOpen, isMenuOpen, onClickLink }: Pro
       {isMenuOpen && (
         <div className="fixed text-right fade-in w-40 top-13 right-0 bg-primary border-b-4 border-l-4 p-4">
           <div className="text-lg py-1 hover:opacity-80 transition">
-            <Link onClick={onClickLink} href="#about-section">
+            <Link onClick={onBlur} href="#about-section">
               About
             </Link>
           </div>
           <div className="text-lg py-1 hover:opacity-80 transition">
-            <Link onClick={onClickLink} href="#main-projects-section">
+            <Link onClick={onBlur} href="#main-projects-section">
               Projects
             </Link>
           </div>
           <div className="text-lg py-1 hover:opacity-80 transition">
-            <Link onClick={onClickLink} href="#intranets-section">
+            <Link onClick={onBlur} href="#intranets-section">
               Intranets
             </Link>
           </div>
           <div className="text-lg py-1 hover:opacity-80 transition">
-            <Link onClick={onClickLink} href="#skills-section">
+            <Link onClick={onBlur} href="#skills-section">
               Skills
             </Link>
           </div>
           <div className="text-lg py-1 hover:opacity-80 transition">
-            <Link onClick={onClickLink} href="#experience-section">
+            <Link onClick={onBlur} href="#experience-section">
               Experience
             </Link>
           </div>
           <div className="text-lg py-1 hover:opacity-80 transition">
-            <Link onClick={onClickLink} href="#design-section">
+            <Link onClick={onBlur} href="#design-section">
               Design
             </Link>
           </div>
           <div className="text-lg py-1 hover:opacity-80 transition">
-            <Link onClick={onClickLink} href="#contact-section">
+            <Link onClick={onBlur} href="#contact-section">
               Contact
             </Link>
           </div>

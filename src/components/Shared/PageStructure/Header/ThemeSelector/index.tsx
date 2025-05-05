@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useState } from 'react';
 import './themeSelector.scss';
 export default function ThemeSelector() {
