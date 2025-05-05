@@ -1,10 +1,13 @@
-import About from '@/components/HomeSections/About';
-import Contact from '@/components/HomeSections/Contact';
-import Designs from '@/components/HomeSections/Designs';
-import Experience from '@/components/HomeSections/Experience';
-import Intranets from '@/components/HomeSections/Intranets';
-import MainProjects from '@/components/HomeSections/MainProjects';
-import Skills from '@/components/HomeSections/Skills';
+import dynamic from 'next/dynamic';
+const About = dynamic(() => import('@/components/HomeSections/About'), { ssr: false });
+const Contact = dynamic(() => import('@/components/HomeSections/Contact'), { ssr: false });
+const Designs = dynamic(() => import('@/components/HomeSections/Designs'), { ssr: false });
+const Experience = dynamic(() => import('@/components/HomeSections/Experience'), { ssr: false });
+const Intranets = dynamic(() => import('@/components/HomeSections/Intranets'), { ssr: false });
+const MainProjects = dynamic(() => import('@/components/HomeSections/MainProjects'), {
+  ssr: false,
+});
+const Skills = dynamic(() => import('@/components/HomeSections/Skills'), { ssr: false });
 
 const Portfolio = () => {
   return (
