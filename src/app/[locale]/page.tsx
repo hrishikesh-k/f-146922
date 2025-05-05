@@ -1,3 +1,4 @@
+import ClientSideSections from '@/components/HomeSections/ClientSideSections/ClientSideSections';
 import dynamic from 'next/dynamic';
 const About = dynamic(() => import('@/components/HomeSections/About'));
 const MainProjects = dynamic(() => import('@/components/HomeSections/MainProjects'));
@@ -11,6 +12,7 @@ const Portfolio = () => {
       <div id="main-projects-section">
         <MainProjects />
       </div>
+      <ClientSideSections />
     </>
   );
 };
