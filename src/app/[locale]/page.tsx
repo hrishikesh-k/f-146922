@@ -1,3 +1,5 @@
+'use client';
+
 import dynamic from 'next/dynamic';
 const About = dynamic(() => import('@/components/HomeSections/About'), { ssr: false });
 const Contact = dynamic(() => import('@/components/HomeSections/Contact'), { ssr: false });
