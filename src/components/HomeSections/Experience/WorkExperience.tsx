@@ -25,11 +25,13 @@ export default function WorkExperience() {
             endDate={experience.endDate}
             title={`${experience.company} | (${experience.location}) | ${experience.title}`}
           >
-            {experience.responsibilities.map((responsibility, index) => (
-              <li className="mb-1" key={index}>
-                {responsibility}
-              </li>
-            ))}
+            <ul>
+              {experience.responsibilities.map((responsibility, index) => (
+                <li className="mb-1" key={index}>
+                  ● {responsibility}
+                </li>
+              ))}
+            </ul>
           </ExperienceItem>
         ))}
       </div>
