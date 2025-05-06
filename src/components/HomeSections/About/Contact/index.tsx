@@ -12,7 +12,7 @@ export default function Contact() {
           className="w-full"
           width="200"
           height="200"
-          src="/images/lucas.jpg"
+          src="/images/lucas.webp"
           alt="lucas mendonca"
         />
       </div>

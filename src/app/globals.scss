@@ -4,11 +4,13 @@
 @font-face {
   font-family: LemonMilk;
   src: url('/fonts/LemonMilk.otf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: Magofah;
   src: url('/fonts/Magofah.ttf');
+  font-display: swap;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -172,7 +174,7 @@ body {
   &::before {
     position: absolute;
     content: '';
-    background-image: url('/images/texture.jpg');
+    background-image: url('/images/texture.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

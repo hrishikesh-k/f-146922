@@ -18,7 +18,7 @@ export const devProjects: Project[] = [
     technology: 'React',
     year: 2025,
     url: 'https://vimeo.com/1074964819/672ee796f2',
-    image: '/images/project-anytime.jpg',
+    image: '/images/project-anytime.webp',
     translations: {
       en: {
         name: 'AnytimeFitness',
@@ -37,7 +37,7 @@ export const devProjects: Project[] = [
     technology: 'React and NodeJS',
     year: 2025,
     url: 'https://nintendostorebylucasmendonca.netlify.app/',
-    image: '/images/project-nintendo.jpg',
+    image: '/images/project-nintendo.webp',
     translations: {
       en: {
         name: 'Nintendo Demo',
@@ -54,7 +54,7 @@ export const devProjects: Project[] = [
     technology: 'React',
     year: 2019,
     url: 'https://eixo-lp.netlify.app/',
-    image: '/images/project-eixo.jpg',
+    image: '/images/project-eixo.webp',
     translations: {
       en: {
         name: 'Landing Page Eixo Platina',
@@ -71,7 +71,7 @@ export const devProjects: Project[] = [
     technology: 'AngularJS',
     year: 2018,
     url: 'https://taskdashboardlucas.netlify.app/',
-    image: '/images/dashboard.jpg',
+    image: '/images/dashboard.webp',
     translations: {
       en: {
         name: 'DashBoard Demo',
@@ -89,7 +89,7 @@ export const devProjects: Project[] = [
     technology: 'Angular 9',
     year: 2021,
     url: 'https://sampamaisrural.prefeitura.sp.gov.br/',
-    image: '/images/project-samparural.jpg',
+    image: '/images/project-samparural.webp',
     translations: {
       en: {
         name: 'SampaRural',
@@ -108,7 +108,7 @@ export const devProjects: Project[] = [
     technology: 'Angular 7',
     year: 2020,
     url: 'https://napista.com.br/',
-    image: '/images/project-napista.jpg',
+    image: '/images/project-napista.webp',
     translations: {
       en: {
         name: 'Na Pista',
@@ -127,7 +127,7 @@ export const devProjects: Project[] = [
     technology: 'React And NestJS',
     year: 2022,
     url: 'https://vimeo.com/778621074',
-    image: '/images/project-alamanda.jpg',
+    image: '/images/project-alamanda.webp',
     translations: {
       en: {
         name: 'Alamanda',
@@ -146,7 +146,7 @@ export const devProjects: Project[] = [
     technology: 'Wordpress',
     year: 2019,
     url: 'https://www.omint.com.br/en/',
-    image: '/images/project-omint.jpg',
+    image: '/images/project-omint.webp',
     translations: {
       en: {
         name: 'Omint',
@@ -165,7 +165,7 @@ export const devProjects: Project[] = [
     technology: 'Shopify',
     year: 2021,
     url: 'https://luvieh.com/',
-    image: '/images/project-luvieh.jpg',
+    image: '/images/project-luvieh.webp',
     translations: {
       en: {
         name: 'Luvieh Jewellery',
@@ -182,7 +182,7 @@ export const devProjects: Project[] = [
     technology: 'React',
     year: 2022,
     url: 'https://diariodoclima.jurema.la/',
-    image: '/images/project-clima.jpg',
+    image: '/images/project-clima.webp',
     translations: {
       en: {
         name: 'Diário do Clima',
@@ -201,7 +201,7 @@ export const devProjects: Project[] = [
     technology: 'Angular',
     year: 2022,
     url: 'https://queridodiario.jurema.la/',
-    image: '/images/project-diario.jpg',
+    image: '/images/project-diario.webp',
     translations: {
       en: {
         name: 'Querido Diário',
@@ -218,7 +218,7 @@ export const devProjects: Project[] = [
     technology: 'React',
     year: 2022,
     url: 'https://jurema.la/',
-    image: '/images/project-jurema.jpg',
+    image: '/images/project-jurema.webp',
     translations: {
       en: {
         name: 'Jurema Institutional',
@@ -236,7 +236,7 @@ export const devProjects: Project[] = [
     technology: 'WordPress',
     year: 2019,
     url: 'https://emccamp.com.br/',
-    image: '/images/project-emccamp.jpg',
+    image: '/images/project-emccamp.webp',
     translations: {
       en: {
         name: 'Emccamp',
@@ -254,7 +254,7 @@ export const devProjects: Project[] = [
     technology: 'Angular 7',
     year: 2019,
     url: 'https://www.bv.com.br/seguro',
-    image: '/images/project-bv.jpg',
+    image: '/images/project-bv.webp',
     translations: {
       en: {
         name: 'Banco BV',
@@ -275,7 +275,7 @@ export const designProjects: Project[] = [
     technology: 'Photoshop, AdobeXD',
     year: 2020,
     url: 'https://xd.adobe.com/view/2168ae57-7722-4175-7187-32285ced0798-5759/',
-    image: '/images/project-lejour.jpg',
+    image: '/images/project-lejour.webp',
     translations: {
       pt: {
         name: 'Le jour',
@@ -293,7 +293,7 @@ export const designProjects: Project[] = [
     technology: 'Photoshop',
     year: 2022,
     url: 'https://www.behance.net/gallery/135246757/Nintendo-redesign',
-    image: '/images/project-nintendo.jpg',
+    image: '/images/project-nintendo.webp',
     translations: {
       pt: {
         name: 'Redesign do site da Nintendo',
@@ -313,7 +313,7 @@ export const intranetProjects: Project[] = [
     id: 1,
     technology: 'Sharepoint',
     year: 2018,
-    image: '/images/intranet-tallento.jpg',
+    image: '/images/intranet-tallento.webp',
     translations: {
       pt: {
         name: 'Tallento',
@@ -329,7 +329,7 @@ export const intranetProjects: Project[] = [
     id: 2,
     technology: 'Sharepoint',
     year: 2018,
-    image: '/images/intranet-nexa.jpg',
+    image: '/images/intranet-nexa.webp',
     translations: {
       pt: {
         name: 'Nexa',
@@ -345,7 +345,7 @@ export const intranetProjects: Project[] = [
     id: 3,
     technology: 'Sharepoint',
     year: 2018,
-    image: '/images/intranet-hersheys.jpg',
+    image: '/images/intranet-hersheys.webp',
     translations: {
       pt: {
         name: "Hershey's",
@@ -361,7 +361,7 @@ export const intranetProjects: Project[] = [
     id: 4,
     technology: 'React',
     year: 2019,
-    image: '/images/intranet-newton.jpg',
+    image: '/images/intranet-newton.webp',
     translations: {
       pt: {
         name: 'Newton',
@@ -377,7 +377,7 @@ export const intranetProjects: Project[] = [
     id: 5,
     technology: 'Sharepoint',
     year: 2017,
-    image: '/images/intranet-class.jpg',
+    image: '/images/intranet-class.webp',
     translations: {
       pt: {
         name: 'Class Solutions',

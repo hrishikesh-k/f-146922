@@ -27,7 +27,7 @@ export default function LanguageSwitcher() {
         >
           <Image
             className="hover:scale-120 md:w-6 cursor-pointer transition"
-            src={`/images/${locale}.jpg`}
+            src={`/images/${locale}.webp`}
             alt={`${locale} flag`}
             width="30"
             height="25"
