@@ -22,7 +22,7 @@ export default function Project({ project }: { project: ProjectModel }) {
           <div className="overflow-auto h-30">
             <div className="text-sm pb-1 font-bold">{project.name}</div>
             <div className="text-[10px] pb-2 font-bold">{project.technology}</div>
-            <div className="text-[11px] text-justify opacity-80 dark:opacity-95">
+            <div className="text-xs text-justify opacity-80 dark:opacity-95">
               {project.description}
             </div>
           </div>

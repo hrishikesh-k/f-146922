@@ -17,7 +17,7 @@ export default function ExperienceItem({ title, startDate, endDate, children }: 
         </span>
         <div className="w-4 h-4 bg-tertiary rounded-full absolute top-[18%] left-[-30px]"></div>
       </div>
-      <div className="text-[11px] leading-[20px] opacity-90 tracking-[2px]">{children}</div>
+      <div className="text-xs leading-[22px] opacity-90 tracking-[2px]">{children}</div>
     </div>
   );
 }
