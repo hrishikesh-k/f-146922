@@ -1,8 +1,9 @@
+import './About.scss';
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
 
-import Contact from './Contact';
-import Description from './Description';
-import './About.scss';
+const Contact = dynamic(() => import('./Contact'));
+const Description = dynamic(() => import('./Description'));
 
 export default function About() {
   return (
@@ -13,7 +14,7 @@ export default function About() {
       <div className="about__description">
         <Description />
       </div>
-      <Link href="#main-projects-section">
+      <Link aria-label="main-projects" href="#main-projects-section">
         <div className="arrow-down hover:scale-105 transition">
           <div className="arrow"></div>
         </div>

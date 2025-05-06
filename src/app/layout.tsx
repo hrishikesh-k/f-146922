@@ -32,6 +32,10 @@ export default async function LocaleLayout({
 
   return (
     <html lang={newLocale} data-theme={theme} className={theme}>
+      <head>
+        <title>Lucas Mendonça Portfolio</title>
+        <meta name="description">My Front-End developer portfolio and info</meta>
+      </head>
       <body className="bg-primary min-h-dvh">
         <NextIntlClientProvider>
           <Header />

@@ -27,6 +27,7 @@ export default function Description() {
       </div>
       <div className="mt-6 mb-8 md:mb-0">
         <Link
+          aria-label="Curriculum"
           target="_blank"
           href="https://drive.google.com/file/d/1kgfV7KCPlHAnBc7GBSZYPbTMsIb2gH7l"
         >

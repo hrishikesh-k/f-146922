@@ -52,6 +52,7 @@ export default function Contact() {
           </div>
           <div className="flex gap-3 pt-5">
             <Link
+              aria-label="github"
               className="transition hover:opacity-60 hover:scale-120"
               target="_blank"
               href="https://github.com/LucasMendoncaWF"
@@ -59,6 +60,7 @@ export default function Contact() {
               <Image src="/images/social-github.png" alt="github-icon" width="32" height="32" />
             </Link>
             <Link
+              aria-label="linkedin"
               className="transition hover:opacity-60 hover:scale-120"
               target="_blank"
               href="https://www.linkedin.com/in/lucasmendoncap/"

@@ -27,6 +27,7 @@ export default function ThemeSelector() {
 
   return (
     <button
+      name="change theme"
       className={`theme-toggle-button theme-toggle-button--${buttonTheme}`}
       onClick={toggleTheme}
     >

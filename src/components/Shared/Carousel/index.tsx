@@ -82,6 +82,7 @@ export default function Carousel({ children }: { children: ReactNode[] }) {
   return (
     <div className="relative">
       <button
+        name="move left"
         onClick={onClickLeft}
         disabled={disabledLeft}
         className="arrow-left cursor-pointer hover:opacity-80 transition hover:scale-105"
@@ -120,6 +121,7 @@ export default function Carousel({ children }: { children: ReactNode[] }) {
         ></div>
       )}
       <button
+        name="move right"
         onClick={onClickRight}
         disabled={disabledRight}
         className="arrow-right cursor-pointer hover:opacity-80 transition hover:scale-105"

@@ -92,6 +92,7 @@ export default function ContactForm() {
       </div>
 
       <button
+        name="submit form"
         type="submit"
         disabled={loading}
         className="w-fit px-6 py-2 border-4 border-borderColor cursor-pointer text-textColor hover:opacity-60 hover:scale-105 transition"

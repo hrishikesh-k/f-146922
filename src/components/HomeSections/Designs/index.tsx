@@ -38,7 +38,7 @@ export default function Designs() {
                 <div className="text-textColor text-sm mt-2">{project.description}</div>
                 <div className={`${isOdd && 'justify-end'} flex `}>
                   {project.url && (
-                    <Link target="_blank" href={project.url}>
+                    <Link aria-label="project" target="_blank" href={project.url}>
                       <div
                         className="
                     self-end

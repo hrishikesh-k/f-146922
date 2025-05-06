@@ -16,6 +16,7 @@ export default function MobileMenu() {
   return (
     <div onBlur={onBlur} onMouseLeave={onBlur} className="flex content-center h-full">
       <button
+        name="open mobile menu"
         onClick={() => setMenuOpen(true)}
         className="cursor-pointer hover:opacity-60 transition"
       >
@@ -27,37 +28,37 @@ export default function MobileMenu() {
       {isMenuOpen && (
         <div className="fixed text-right fade-in w-40 top-13 right-0 bg-primary border-b-4 border-l-4 p-4">
           <div className="text-lg py-1 hover:opacity-80 transition">
-            <Link onClick={onBlur} href="#about-section">
+            <Link aria-label="About section" onClick={onBlur} href="#about-section">
               About
             </Link>
           </div>
           <div className="text-lg py-1 hover:opacity-80 transition">
-            <Link onClick={onBlur} href="#main-projects-section">
+            <Link aria-label="Projects section" onClick={onBlur} href="#main-projects-section">
               Projects
             </Link>
           </div>
           <div className="text-lg py-1 hover:opacity-80 transition">
-            <Link onClick={onBlur} href="#intranets-section">
+            <Link aria-label="Intranets section" onClick={onBlur} href="#intranets-section">
               Intranets
             </Link>
           </div>
           <div className="text-lg py-1 hover:opacity-80 transition">
-            <Link onClick={onBlur} href="#skills-section">
+            <Link aria-label="Skills section" onClick={onBlur} href="#skills-section">
               Skills
             </Link>
           </div>
           <div className="text-lg py-1 hover:opacity-80 transition">
-            <Link onClick={onBlur} href="#experience-section">
+            <Link aria-label="Experience section" onClick={onBlur} href="#experience-section">
               Experience
             </Link>
           </div>
           <div className="text-lg py-1 hover:opacity-80 transition">
-            <Link onClick={onBlur} href="#design-section">
+            <Link aria-label="Design section" onClick={onBlur} href="#design-section">
               Design
             </Link>
           </div>
           <div className="text-lg py-1 hover:opacity-80 transition">
-            <Link onClick={onBlur} href="#contact-section">
+            <Link aria-label="Contact section" onClick={onBlur} href="#contact-section">
               Contact
             </Link>
           </div>

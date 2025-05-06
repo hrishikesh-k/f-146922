@@ -27,7 +27,7 @@ export default function Project({ project }: { project: ProjectModel }) {
             </div>
           </div>
           {project.url && (
-            <Link target="_blank" href={project.url}>
+            <Link aria-label="project" target="_blank" href={project.url}>
               <div
                 className="
                 text-textColor 
