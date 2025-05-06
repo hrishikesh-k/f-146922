@@ -16,7 +16,7 @@ export default function MobileMenu() {
   return (
     <div onBlur={onBlur} onMouseLeave={onBlur} className="flex content-center h-full">
       <button
-        name="open mobile menu"
+        aria-label="open mobile menu"
         onClick={() => setMenuOpen(true)}
         className="cursor-pointer hover:opacity-60 transition"
       >

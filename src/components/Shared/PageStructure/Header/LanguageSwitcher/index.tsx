@@ -20,7 +20,11 @@ export default function LanguageSwitcher() {
   return (
     <div className="flex content-center gap-1">
       {nextIntlConfig.locales.map((locale, index) => (
-        <button name={`change language to ${locale}`} key={index} onClick={() => onClick(locale)}>
+        <button
+          aria-label={`change language to ${locale}`}
+          key={index}
+          onClick={() => onClick(locale)}
+        >
           <Image
             className="hover:scale-120 md:w-6 cursor-pointer transition"
             src={`/images/${locale}.jpg`}

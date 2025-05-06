@@ -42,7 +42,7 @@ export default function ContactForm() {
         </label>
         <input
           type="text"
-          name="name"
+          id="name"
           value={form.name}
           onChange={handleChange}
           required
@@ -56,7 +56,7 @@ export default function ContactForm() {
         </label>
         <input
           type="email"
-          name="email"
+          id="email"
           value={form.email}
           onChange={handleChange}
           required
@@ -70,7 +70,7 @@ export default function ContactForm() {
         </label>
         <input
           type="text"
-          name="subject"
+          id="subject"
           value={form.subject}
           onChange={handleChange}
           className="w-full px-4 py-2 bg-primary text-textColor border-4 border-textColor focus:outline-none focus:ring-2 focus:ring-orange-400"
@@ -82,7 +82,7 @@ export default function ContactForm() {
           {t('formMessage')}
         </label>
         <textarea
-          name="message"
+          id="message"
           rows={5}
           value={form.message}
           onChange={handleChange}
@@ -92,7 +92,7 @@ export default function ContactForm() {
       </div>
 
       <button
-        name="submit form"
+        aria-label="submit form"
         type="submit"
         disabled={loading}
         className="w-fit px-6 py-2 border-4 border-borderColor cursor-pointer text-textColor hover:opacity-60 hover:scale-105 transition"
