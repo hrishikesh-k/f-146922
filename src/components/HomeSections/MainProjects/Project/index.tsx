@@ -19,7 +19,7 @@ export default function Project({ project }: { project: ProjectModel }) {
         </div>
         <Image className="w-full" width="320" height="150" src={project.image} alt={project.name} />
         <div className="p-4 text-textColor border-t-4 border-borderColor">
-          <div className="overflow-auto h-30">
+          <div className="overflow-auto h-32">
             <div className="text-sm pb-1 font-bold">{project.name}</div>
             <div className="text-[10px] pb-2 font-bold">{project.technology}</div>
             <div className="text-xs text-justify opacity-80 dark:opacity-95">
