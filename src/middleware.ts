@@ -7,7 +7,7 @@ export function middleware(request: NextRequest) {
     theme = 'dark';
   }
 
-  const response = NextResponse.next()
+  const response = NextResponse.next();
   response.headers.set('x-theme', theme);
   return response;
 }
