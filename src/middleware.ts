@@ -1,21 +1,14 @@
-import type { NextRequest } from 'next/server';
-import createMiddleware from 'next-intl/middleware';
-
-import { routing } from './i18n/routing';
-
-const intlMiddleware = createMiddleware(routing);
+import { type NextRequest, NextResponse } from 'next/server';
 
 export function middleware(request: NextRequest) {
-  const response = intlMiddleware(request);
-
   const initialTheme = request.cookies.get('theme')?.value;
   let theme = 'light';
   if (initialTheme === 'dark') {
     theme = 'dark';
   }
 
+  const response = NextResponse.next()
   response.headers.set('x-theme', theme);
-
   return response;
 }
 
