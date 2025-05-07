@@ -11,8 +11,8 @@ import nextIntlConfig from '../../next-intl.config';
 import './globals.scss';
 
 async function getThemeFromHeaders() {
-  const cookieStore = await cookies()
-  const theme = cookieStore.get('theme')?.value
+  const cookieStore = await cookies();
+  const theme = cookieStore.get('theme')?.value;
   return theme === 'dark' ? 'dark' : 'light';
 }
 
