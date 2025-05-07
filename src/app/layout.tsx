@@ -1,4 +1,4 @@
-import { headers } from 'next/headers';
+import { cookies } from 'next/headers';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import React from 'react';
 
@@ -11,8 +11,8 @@ import nextIntlConfig from '../../next-intl.config';
 import './globals.scss';
 
 async function getThemeFromHeaders() {
-  const headersList = headers();
-  const theme = (await headersList).get('x-theme');
+  const cookieStore = await cookies()
+  const theme = cookieStore.get('theme')?.value
   return theme === 'dark' ? 'dark' : 'light';
 }
 
